@@ -1,0 +1,55 @@
+services:
+  devflow:
+    build: .
+    command: ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips", "172.29.67.0/24", "--limit-concurrency", "32", "--timeout-keep-alive", "5", "--backlog", "128", "--no-access-log"]
+    environment:
+      DEVFLOW_ENTERPRISE_MODE: "1"
+      DEVFLOW_ENTERPRISE_CONFIG: /run/secrets/enterprise_config
+    secrets: [enterprise_config, identity_public_key, audit_key]
+    volumes:
+      - devflow_data:/srv/app/data
+    read_only: true
+    tmpfs: [/tmp:size=64m,noexec,nosuid]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 768m
+    cpus: 1.0
+    pids_limit: 128
+    restart: unless-stopped
+    networks: [private]
+  proxy:
+    image: nginxinc/nginx-unprivileged:stable-alpine
+    ports: ["443:8443"]
+    volumes:
+      - ./deploy/nginx.conf:/etc/nginx/nginx.conf:ro
+    secrets: [tls_cert, tls_key]
+    read_only: true
+    tmpfs: [/tmp:size=128m,noexec,nosuid]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 192m
+    cpus: 0.5
+    pids_limit: 64
+    restart: unless-stopped
+    depends_on: [devflow]
+    networks: [private, edge]
+networks:
+  private:
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.29.67.0/24
+  edge: {}
+volumes:
+  devflow_data: {}
+secrets:
+  enterprise_config:
+    file: ./secrets/enterprise.json
+  identity_public_key:
+    file: ./secrets/identity-public.pem
+  audit_key:
+    file: ./secrets/audit.key
+  tls_cert:
+    file: ./secrets/tls.crt
+  tls_key:
+    file: ./secrets/tls.key

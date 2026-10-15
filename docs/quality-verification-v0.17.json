@@ -1,0 +1,2590 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15T03:42:29.710351+00:00",
+  "source_sha256": "9f63eddb78227775d6be775d0d53bf30ebf644df3e44c69fa0aa6da579ea72f5",
+  "environment": {
+    "python": "3.14.7",
+    "platform": "win32",
+    "packages": {
+      "fastapi": "0.141.1",
+      "starlette": "1.6.0",
+      "pytest": "9.1.1",
+      "httpx": "0.28.1",
+      "coverage": "7.16.2",
+      "ruff": "0.17.0",
+      "pqcrypto": "0.4.0",
+      "cryptography": "46.0.3",
+      "anyio": "4.15.1"
+    }
+  },
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Unit, integration and security tests",
+      "status": "passed"
+    },
+    {
+      "name": "Coverage thresholds",
+      "status": "passed",
+      "statement_percent": 94.92,
+      "branch_percent": 86.03,
+      "required_statement_percent": 90,
+      "required_branch_percent": 80
+    },
+    {
+      "name": "Function body exercise",
+      "status": "passed",
+      "total": 169,
+      "missing": []
+    },
+    {
+      "name": "Static correctness checks",
+      "status": "passed",
+      "finding_count": 0
+    },
+    {
+      "name": "Browser JavaScript syntax",
+      "status": "passed",
+      "files": [
+        {
+          "path": "static/engineering.html",
+          "status": "passed"
+        },
+        {
+          "path": "static/index.html",
+          "status": "passed"
+        },
+        {
+          "path": "static/protection-client.js",
+          "status": "passed"
+        },
+        {
+          "path": "static/protection.html",
+          "status": "passed"
+        },
+        {
+          "path": "static/quality.html",
+          "status": "passed"
+        },
+        {
+          "path": "static/security-client.js",
+          "status": "passed"
+        },
+        {
+          "path": "static/systems.html",
+          "status": "passed"
+        },
+        {
+          "path": "static/workflow.html",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "name": "Endpoint response coverage",
+      "status": "passed",
+      "total": 59,
+      "missing": []
+    },
+    {
+      "name": "Optional cryptography exercised",
+      "status": "passed"
+    },
+    {
+      "name": "Source stable during verification",
+      "status": "passed"
+    }
+  ],
+  "segments": [
+    {
+      "path": "analyze_repo.py",
+      "summary": {
+        "covered_lines": 34,
+        "num_statements": 40,
+        "percent_covered": 78.57142857142857,
+        "percent_covered_display": "79",
+        "missing_lines": 6,
+        "excluded_lines": 0,
+        "percent_statements_covered": 85.0,
+        "percent_statements_covered_display": "85",
+        "num_branches": 16,
+        "num_partial_branches": 6,
+        "covered_branches": 10,
+        "missing_branches": 6,
+        "percent_branches_covered": 62.5,
+        "percent_branches_covered_display": "62"
+      },
+      "functions": [
+        {
+          "name": "read_snapshot",
+          "line": 11,
+          "statements": 17,
+          "covered": 12,
+          "missing_lines": [
+            18,
+            20,
+            22,
+            25,
+            27
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "main",
+          "line": 31,
+          "statements": 14,
+          "covered": 14,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/analysis.py",
+      "summary": {
+        "covered_lines": 85,
+        "num_statements": 92,
+        "percent_covered": 87.66233766233766,
+        "percent_covered_display": "88",
+        "missing_lines": 7,
+        "excluded_lines": 0,
+        "percent_statements_covered": 92.3913043478261,
+        "percent_statements_covered_display": "92",
+        "num_branches": 62,
+        "num_partial_branches": 6,
+        "covered_branches": 50,
+        "missing_branches": 12,
+        "percent_branches_covered": 80.64516129032258,
+        "percent_branches_covered_display": "81"
+      },
+      "functions": [
+        {
+          "name": "analyze_requirements",
+          "line": 23,
+          "statements": 29,
+          "covered": 28,
+          "missing_lines": [
+            29
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "_make_finding",
+          "line": 70,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "analyze_python_code",
+          "line": 74,
+          "statements": 50,
+          "covered": 44,
+          "missing_lines": [
+            121,
+            122,
+            123,
+            124,
+            125,
+            126
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "build_plan",
+          "line": 139,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/assurance.py",
+      "summary": {
+        "covered_lines": 175,
+        "num_statements": 186,
+        "percent_covered": 91.2280701754386,
+        "percent_covered_display": "91",
+        "missing_lines": 11,
+        "excluded_lines": 0,
+        "percent_statements_covered": 94.08602150537635,
+        "percent_statements_covered_display": "94",
+        "num_branches": 42,
+        "num_partial_branches": 9,
+        "covered_branches": 33,
+        "missing_branches": 9,
+        "percent_branches_covered": 78.57142857142857,
+        "percent_branches_covered_display": "79"
+      },
+      "functions": [
+        {
+          "name": "Example.finite_values",
+          "line": 30,
+          "statements": 7,
+          "covered": 5,
+          "missing_lines": [
+            33,
+            36
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "Specification.valid_target",
+          "line": 52,
+          "statements": 4,
+          "covered": 3,
+          "missing_lines": [
+            55
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "validate_target",
+          "line": 59,
+          "statements": 4,
+          "covered": 2,
+          "missing_lines": [
+            61,
+            63
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "Verification.valid_target",
+          "line": 74,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "save",
+          "line": 79,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "specification",
+          "line": 89,
+          "statements": 27,
+          "covered": 26,
+          "missing_lines": [
+            101
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "verification",
+          "line": 131,
+          "statements": 9,
+          "covered": 9,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "security",
+          "line": 144,
+          "statements": 8,
+          "covered": 6,
+          "missing_lines": [
+            149,
+            150
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "reports",
+          "line": 156,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "locked_mutation",
+          "line": 184,
+          "statements": 16,
+          "covered": 14,
+          "missing_lines": [
+            191,
+            196
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "save_experiment",
+          "line": 204,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "mutations",
+          "line": 214,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "replay_verification",
+          "line": 225,
+          "statements": 12,
+          "covered": 11,
+          "missing_lines": [
+            233
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "experiments",
+          "line": 242,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/audit_exports.py",
+      "summary": {
+        "covered_lines": 43,
+        "num_statements": 45,
+        "percent_covered": 96.49122807017544,
+        "percent_covered_display": "96",
+        "missing_lines": 2,
+        "excluded_lines": 0,
+        "percent_statements_covered": 95.55555555555556,
+        "percent_statements_covered_display": "96",
+        "num_branches": 12,
+        "num_partial_branches": 0,
+        "covered_branches": 12,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "functions": [
+        {
+          "name": "add_finding_context",
+          "line": 9,
+          "statements": 22,
+          "covered": 20,
+          "missing_lines": [
+            29,
+            30
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "add_finding_context.visit",
+          "line": 19,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "remediation_plan",
+          "line": 43,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "to_sarif",
+          "line": 55,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/bounded_check.py",
+      "summary": {
+        "covered_lines": 54,
+        "num_statements": 56,
+        "percent_covered": 94.44444444444444,
+        "percent_covered_display": "94",
+        "missing_lines": 2,
+        "excluded_lines": 0,
+        "percent_statements_covered": 96.42857142857143,
+        "percent_statements_covered_display": "96",
+        "num_branches": 16,
+        "num_partial_branches": 2,
+        "covered_branches": 14,
+        "missing_branches": 2,
+        "percent_branches_covered": 87.5,
+        "percent_branches_covered_display": "88"
+      },
+      "functions": [
+        {
+          "name": "BoundedInput.bounded",
+          "line": 25,
+          "statements": 11,
+          "covered": 10,
+          "missing_lines": [
+            30
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "compare_bounded",
+          "line": 39,
+          "statements": 18,
+          "covered": 17,
+          "missing_lines": [
+            52
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "bounded_check",
+          "line": 66,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/ci_evidence.py",
+      "summary": {
+        "covered_lines": 50,
+        "num_statements": 51,
+        "percent_covered": 96.61016949152543,
+        "percent_covered_display": "97",
+        "missing_lines": 1,
+        "excluded_lines": 0,
+        "percent_statements_covered": 98.03921568627452,
+        "percent_statements_covered_display": "98",
+        "num_branches": 8,
+        "num_partial_branches": 1,
+        "covered_branches": 7,
+        "missing_branches": 1,
+        "percent_branches_covered": 87.5,
+        "percent_branches_covered_display": "88"
+      },
+      "functions": [
+        {
+          "name": "configuration",
+          "line": 19,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "ci_status",
+          "line": 30,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "fetch_run",
+          "line": 37,
+          "statements": 13,
+          "covered": 12,
+          "missing_lines": [
+            46
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "assess_run",
+          "line": 55,
+          "statements": 8,
+          "covered": 8,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "verify_ci",
+          "line": 79,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/dataflow.py",
+      "summary": {
+        "covered_lines": 106,
+        "num_statements": 115,
+        "percent_covered": 88.64864864864865,
+        "percent_covered_display": "89",
+        "missing_lines": 9,
+        "excluded_lines": 0,
+        "percent_statements_covered": 92.17391304347827,
+        "percent_statements_covered_display": "92",
+        "num_branches": 70,
+        "num_partial_branches": 8,
+        "covered_branches": 58,
+        "missing_branches": 12,
+        "percent_branches_covered": 82.85714285714286,
+        "percent_branches_covered_display": "83"
+      },
+      "functions": [
+        {
+          "name": "scan_dataflow",
+          "line": 12,
+          "statements": 48,
+          "covered": 45,
+          "missing_lines": [
+            21,
+            22,
+            43
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "scan_dataflow.expression",
+          "line": 56,
+          "statements": 44,
+          "covered": 38,
+          "missing_lines": [
+            71,
+            72,
+            88,
+            106,
+            107,
+            108
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "scan_dataflow.block",
+          "line": 111,
+          "statements": 17,
+          "covered": 17,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/engineering.py",
+      "summary": {
+        "covered_lines": 95,
+        "num_statements": 99,
+        "percent_covered": 94.69026548672566,
+        "percent_covered_display": "95",
+        "missing_lines": 4,
+        "excluded_lines": 0,
+        "percent_statements_covered": 95.95959595959596,
+        "percent_statements_covered_display": "96",
+        "num_branches": 14,
+        "num_partial_branches": 2,
+        "covered_branches": 12,
+        "missing_branches": 2,
+        "percent_branches_covered": 85.71428571428571,
+        "percent_branches_covered_display": "86"
+      },
+      "functions": [
+        {
+          "name": "Snapshot.bounded_files",
+          "line": 24,
+          "statements": 11,
+          "covered": 10,
+          "missing_lines": [
+            27
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "check_project",
+          "line": 64,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "requirements",
+          "line": 70,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "repository",
+          "line": 76,
+          "statements": 12,
+          "covered": 10,
+          "missing_lines": [
+            81,
+            82
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "reports",
+          "line": 97,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "debug",
+          "line": 105,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "contracts",
+          "line": 111,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "environment",
+          "line": 117,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "decision",
+          "line": 123,
+          "statements": 6,
+          "covered": 5,
+          "missing_lines": [
+            125
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "decisions",
+          "line": 134,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "lifecycle",
+          "line": 143,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/intelligence.py",
+      "summary": {
+        "covered_lines": 152,
+        "num_statements": 157,
+        "percent_covered": 94.07114624505928,
+        "percent_covered_display": "94",
+        "missing_lines": 5,
+        "excluded_lines": 0,
+        "percent_statements_covered": 96.81528662420382,
+        "percent_statements_covered_display": "97",
+        "num_branches": 96,
+        "num_partial_branches": 6,
+        "covered_branches": 86,
+        "missing_branches": 10,
+        "percent_branches_covered": 89.58333333333333,
+        "percent_branches_covered_display": "90"
+      },
+      "functions": [
+        {
+          "name": "qualified",
+          "line": 13,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "inspect_source",
+          "line": 21,
+          "statements": 50,
+          "covered": 45,
+          "missing_lines": [
+            52,
+            53,
+            54,
+            59,
+            68
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "inspect_source.finding",
+          "line": 38,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "requirements_intelligence",
+          "line": 81,
+          "statements": 14,
+          "covered": 14,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "repository_intelligence",
+          "line": 98,
+          "statements": 48,
+          "covered": 48,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "debug_traceback",
+          "line": 162,
+          "statements": 10,
+          "covered": 10,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "compare_contracts",
+          "line": 183,
+          "statements": 12,
+          "covered": 12,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "environment_check",
+          "line": 198,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/lifecycle.py",
+      "summary": {
+        "covered_lines": 87,
+        "num_statements": 91,
+        "percent_covered": 92.19858156028369,
+        "percent_covered_display": "92",
+        "missing_lines": 4,
+        "excluded_lines": 0,
+        "percent_statements_covered": 95.6043956043956,
+        "percent_statements_covered_display": "96",
+        "num_branches": 50,
+        "num_partial_branches": 7,
+        "covered_branches": 43,
+        "missing_branches": 7,
+        "percent_branches_covered": 86.0,
+        "percent_branches_covered_display": "86"
+      },
+      "functions": [
+        {
+          "name": "latest_repository",
+          "line": 14,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "criterion_impact",
+          "line": 19,
+          "statements": 22,
+          "covered": 22,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "lifecycle_report",
+          "line": 61,
+          "statements": 61,
+          "covered": 57,
+          "missing_lines": [
+            84,
+            103,
+            123,
+            127
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/main.py",
+      "summary": {
+        "covered_lines": 130,
+        "num_statements": 132,
+        "percent_covered": 95.83333333333333,
+        "percent_covered_display": "96",
+        "missing_lines": 2,
+        "excluded_lines": 0,
+        "percent_statements_covered": 98.48484848484848,
+        "percent_statements_covered_display": "98",
+        "num_branches": 12,
+        "num_partial_branches": 4,
+        "covered_branches": 8,
+        "missing_branches": 4,
+        "percent_branches_covered": 66.66666666666667,
+        "percent_branches_covered_display": "67"
+      },
+      "functions": [
+        {
+          "name": "lifespan",
+          "line": 19,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "safe_validation_errors",
+          "line": 28,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "safe_validation_errors.safe",
+          "line": 30,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "latest",
+          "line": 66,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "index",
+          "line": 75,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "overview",
+          "line": 80,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "list_modules",
+          "line": 85,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "list_projects",
+          "line": 90,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "create_project",
+          "line": 96,
+          "statements": 6,
+          "covered": 5,
+          "missing_lines": [
+            99
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "project_detail",
+          "line": 106,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "check_requirements",
+          "line": 112,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "check_code",
+          "line": 122,
+          "statements": 7,
+          "covered": 6,
+          "missing_lines": [
+            124
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "get_report",
+          "line": 133,
+          "statements": 15,
+          "covered": 15,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "security_client",
+          "line": 192,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "engineering_page",
+          "line": 196,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "systems_page",
+          "line": 201,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "quality_page",
+          "line": 206,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "protection_page",
+          "line": 211,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "protection_client",
+          "line": 216,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/mutation.py",
+      "summary": {
+        "covered_lines": 112,
+        "num_statements": 115,
+        "percent_covered": 95.3757225433526,
+        "percent_covered_display": "95",
+        "missing_lines": 3,
+        "excluded_lines": 0,
+        "percent_statements_covered": 97.3913043478261,
+        "percent_statements_covered_display": "97",
+        "num_branches": 58,
+        "num_partial_branches": 5,
+        "covered_branches": 53,
+        "missing_branches": 5,
+        "percent_branches_covered": 91.37931034482759,
+        "percent_branches_covered_display": "91"
+      },
+      "functions": [
+        {
+          "name": "shrink_witness",
+          "line": 14,
+          "statements": 24,
+          "covered": 23,
+          "missing_lines": [
+            32
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "mutation_audit",
+          "line": 43,
+          "statements": 82,
+          "covered": 80,
+          "missing_lines": [
+            92,
+            110
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "summary": {
+        "covered_lines": 105,
+        "num_statements": 120,
+        "percent_covered": 84.6938775510204,
+        "percent_covered_display": "85",
+        "missing_lines": 15,
+        "excluded_lines": 0,
+        "percent_statements_covered": 87.5,
+        "percent_statements_covered_display": "88",
+        "num_branches": 76,
+        "num_partial_branches": 11,
+        "covered_branches": 61,
+        "missing_branches": 15,
+        "percent_branches_covered": 80.26315789473684,
+        "percent_branches_covered_display": "80"
+      },
+      "functions": [
+        {
+          "name": "bounded",
+          "line": 20,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "Interpreter.__init__",
+          "line": 27,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "Interpreter.tick",
+          "line": 30,
+          "statements": 3,
+          "covered": 2,
+          "missing_lines": [
+            33
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "Interpreter.expression",
+          "line": 35,
+          "statements": 30,
+          "covered": 28,
+          "missing_lines": [
+            41,
+            65
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "Interpreter.block",
+          "line": 67,
+          "statements": 16,
+          "covered": 13,
+          "missing_lines": [
+            80,
+            81,
+            82
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "verify_numeric",
+          "line": 86,
+          "statements": 51,
+          "covered": 42,
+          "missing_lines": [
+            95,
+            107,
+            110,
+            113,
+            119,
+            124,
+            130,
+            136,
+            137
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/owner_access.py",
+      "summary": {
+        "covered_lines": 86,
+        "num_statements": 90,
+        "percent_covered": 94.82758620689656,
+        "percent_covered_display": "95",
+        "missing_lines": 4,
+        "excluded_lines": 0,
+        "percent_statements_covered": 95.55555555555556,
+        "percent_statements_covered_display": "96",
+        "num_branches": 26,
+        "num_partial_branches": 2,
+        "covered_branches": 24,
+        "missing_branches": 2,
+        "percent_branches_covered": 92.3076923076923,
+        "percent_branches_covered_display": "92"
+      },
+      "functions": [
+        {
+          "name": "enabled",
+          "line": 19,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "public_enabled",
+          "line": 23,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "tunnel_authenticated",
+          "line": 27,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "fingerprint",
+          "line": 34,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "issue_link",
+          "line": 38,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "local_request",
+          "line": 47,
+          "statements": 5,
+          "covered": 3,
+          "missing_lines": [
+            50,
+            51
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "authenticated",
+          "line": 55,
+          "statements": 13,
+          "covered": 12,
+          "missing_lines": [
+            59
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "protect",
+          "line": 71,
+          "statements": 11,
+          "covered": 11,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_owner_routes",
+          "line": 86,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_owner_routes.owner_login",
+          "line": 88,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_owner_routes.enter",
+          "line": 97,
+          "statements": 11,
+          "covered": 11,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_owner_routes.status",
+          "line": 112,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_owner_routes.logout",
+          "line": 120,
+          "statements": 8,
+          "covered": 7,
+          "missing_lines": [
+            122
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/pqc_export.py",
+      "summary": {
+        "covered_lines": 89,
+        "num_statements": 98,
+        "percent_covered": 85.71428571428571,
+        "percent_covered_display": "86",
+        "missing_lines": 9,
+        "excluded_lines": 0,
+        "percent_statements_covered": 90.81632653061224,
+        "percent_statements_covered_display": "91",
+        "num_branches": 28,
+        "num_partial_branches": 9,
+        "covered_branches": 19,
+        "missing_branches": 9,
+        "percent_branches_covered": 67.85714285714286,
+        "percent_branches_covered_display": "68"
+      },
+      "functions": [
+        {
+          "name": "canonical",
+          "line": 19,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "encode",
+          "line": 23,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "decode",
+          "line": 27,
+          "statements": 6,
+          "covered": 4,
+          "missing_lines": [
+            29,
+            32
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "key_id",
+          "line": 36,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "validate_public",
+          "line": 40,
+          "statements": 4,
+          "covered": 3,
+          "missing_lines": [
+            42
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "generate_keys",
+          "line": 47,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "password_key",
+          "line": 54,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "protect_keys",
+          "line": 60,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "unlock_keys",
+          "line": 66,
+          "statements": 16,
+          "covered": 12,
+          "missing_lines": [
+            68,
+            71,
+            78,
+            81
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "report_key",
+          "line": 85,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "seal",
+          "line": 89,
+          "statements": 10,
+          "covered": 9,
+          "missing_lines": [
+            94
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "verify_envelope",
+          "line": 103,
+          "statements": 15,
+          "covered": 14,
+          "missing_lines": [
+            106
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "open_report",
+          "line": 121,
+          "statements": 7,
+          "covered": 7,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/protection.py",
+      "summary": {
+        "covered_lines": 118,
+        "num_statements": 120,
+        "percent_covered": 97.6470588235294,
+        "percent_covered_display": "98",
+        "missing_lines": 2,
+        "excluded_lines": 0,
+        "percent_statements_covered": 98.33333333333333,
+        "percent_statements_covered_display": "98",
+        "num_branches": 50,
+        "num_partial_branches": 2,
+        "covered_branches": 48,
+        "missing_branches": 2,
+        "percent_branches_covered": 96.0,
+        "percent_branches_covered_display": "96"
+      },
+      "functions": [
+        {
+          "name": "ProtectionInput.bounded",
+          "line": 25,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "audit",
+          "line": 32,
+          "statements": 60,
+          "covered": 58,
+          "missing_lines": [
+            39,
+            40
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "audit.finding",
+          "line": 34,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "protection_audit",
+          "line": 117,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "compare_reports",
+          "line": 142,
+          "statements": 11,
+          "covered": 11,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "compare_reports.legacy_key",
+          "line": 143,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "compare_reports.key",
+          "line": 147,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "protection_compare",
+          "line": 166,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/quality.py",
+      "summary": {
+        "covered_lines": 30,
+        "num_statements": 31,
+        "percent_covered": 95.1219512195122,
+        "percent_covered_display": "95",
+        "missing_lines": 1,
+        "excluded_lines": 0,
+        "percent_statements_covered": 96.7741935483871,
+        "percent_statements_covered_display": "97",
+        "num_branches": 10,
+        "num_partial_branches": 1,
+        "covered_branches": 9,
+        "missing_branches": 1,
+        "percent_branches_covered": 90.0,
+        "percent_branches_covered_display": "90"
+      },
+      "functions": [
+        {
+          "name": "source_digest",
+          "line": 12,
+          "statements": 9,
+          "covered": 9,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "quality_status",
+          "line": 26,
+          "statements": 13,
+          "covered": 12,
+          "missing_lines": [
+            32
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/reproducibility.py",
+      "summary": {
+        "covered_lines": 22,
+        "num_statements": 22,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 6,
+        "num_partial_branches": 0,
+        "covered_branches": 6,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "functions": [
+        {
+          "name": "canonical",
+          "line": 11,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "digest",
+          "line": 15,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "envelope",
+          "line": 19,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "replay",
+          "line": 28,
+          "statements": 8,
+          "covered": 8,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/request_limits.py",
+      "summary": {
+        "covered_lines": 37,
+        "num_statements": 38,
+        "percent_covered": 96.29629629629629,
+        "percent_covered_display": "96",
+        "missing_lines": 1,
+        "excluded_lines": 0,
+        "percent_statements_covered": 97.36842105263158,
+        "percent_statements_covered_display": "97",
+        "num_branches": 16,
+        "num_partial_branches": 1,
+        "covered_branches": 15,
+        "missing_branches": 1,
+        "percent_branches_covered": 93.75,
+        "percent_branches_covered_display": "94"
+      },
+      "functions": [
+        {
+          "name": "RequestSizeLimit.__init__",
+          "line": 6,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "RequestSizeLimit.__call__",
+          "line": 10,
+          "statements": 27,
+          "covered": 27,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "RequestSizeLimit.__call__.replay",
+          "line": 38,
+          "statements": 4,
+          "covered": 3,
+          "missing_lines": [
+            43
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/security.py",
+      "summary": {
+        "covered_lines": 55,
+        "num_statements": 55,
+        "percent_covered": 98.73417721518987,
+        "percent_covered_display": "99",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 24,
+        "num_partial_branches": 1,
+        "covered_branches": 23,
+        "missing_branches": 1,
+        "percent_branches_covered": 95.83333333333333,
+        "percent_branches_covered_display": "96"
+      },
+      "functions": [
+        {
+          "name": "install_security",
+          "line": 11,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_security.boundaries",
+          "line": 13,
+          "statements": 30,
+          "covered": 30,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_security.security_status",
+          "line": 46,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "install_security.authenticated_schema",
+          "line": 55,
+          "statements": 9,
+          "covered": 9,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/storage.py",
+      "summary": {
+        "covered_lines": 33,
+        "num_statements": 33,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 2,
+        "num_partial_branches": 0,
+        "covered_branches": 2,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "functions": [
+        {
+          "name": "db",
+          "line": 18,
+          "statements": 11,
+          "covered": 11,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "now_iso",
+          "line": 33,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "get_project",
+          "line": 37,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "initialize",
+          "line": 44,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/systems.py",
+      "summary": {
+        "covered_lines": 168,
+        "num_statements": 169,
+        "percent_covered": 99.15611814345992,
+        "percent_covered_display": "99",
+        "missing_lines": 1,
+        "excluded_lines": 0,
+        "percent_statements_covered": 99.40828402366864,
+        "percent_statements_covered_display": "99",
+        "num_branches": 68,
+        "num_partial_branches": 1,
+        "covered_branches": 67,
+        "missing_branches": 1,
+        "percent_branches_covered": 98.52941176470588,
+        "percent_branches_covered_display": "99"
+      },
+      "functions": [
+        {
+          "name": "Boundary.safe_paths",
+          "line": 26,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "Counts.valid_counts",
+          "line": 39,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "SLO.valid_windows",
+          "line": 55,
+          "statements": 13,
+          "covered": 13,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "architecture",
+          "line": 76,
+          "statements": 16,
+          "covered": 16,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "architecture.visit",
+          "line": 81,
+          "statements": 20,
+          "covered": 20,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "reliability",
+          "line": 123,
+          "statements": 19,
+          "covered": 19,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "readiness",
+          "line": 158,
+          "statements": 28,
+          "covered": 27,
+          "missing_lines": [
+            177
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "readiness.add",
+          "line": 160,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "enrich",
+          "line": 195,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "analyze_systems",
+          "line": 207,
+          "statements": 7,
+          "covered": 7,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "latest_systems",
+          "line": 224,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "app/workflow.py",
+      "summary": {
+        "covered_lines": 193,
+        "num_statements": 196,
+        "percent_covered": 96.66666666666667,
+        "percent_covered_display": "97",
+        "missing_lines": 3,
+        "excluded_lines": 0,
+        "percent_statements_covered": 98.46938775510205,
+        "percent_statements_covered_display": "98",
+        "num_branches": 44,
+        "num_partial_branches": 5,
+        "covered_branches": 39,
+        "missing_branches": 5,
+        "percent_branches_covered": 88.63636363636364,
+        "percent_branches_covered_display": "89"
+      },
+      "functions": [
+        {
+          "name": "must_exist",
+          "line": 57,
+          "statements": 5,
+          "covered": 5,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "record_event",
+          "line": 76,
+          "statements": 1,
+          "covered": 1,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "clean",
+          "line": 83,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "generate_drafts",
+          "line": 90,
+          "statements": 9,
+          "covered": 8,
+          "missing_lines": [
+            98
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "_feature_snapshot",
+          "line": 107,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "_criterion_snapshot",
+          "line": 114,
+          "statements": 30,
+          "covered": 29,
+          "missing_lines": [
+            147
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "_report",
+          "line": 153,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "create_feature",
+          "line": 175,
+          "statements": 10,
+          "covered": 10,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "list_features",
+          "line": 191,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "get_feature",
+          "line": 199,
+          "statements": 3,
+          "covered": 3,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "edit_criterion",
+          "line": 206,
+          "statements": 11,
+          "covered": 11,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "approve_criterion",
+          "line": 223,
+          "statements": 8,
+          "covered": 8,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "create_code_link",
+          "line": 235,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "create_evidence",
+          "line": 246,
+          "statements": 14,
+          "covered": 13,
+          "missing_lines": [
+            257
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "review_evidence",
+          "line": 269,
+          "statements": 8,
+          "covered": 8,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "traceability_report",
+          "line": 283,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "workflow_events",
+          "line": 289,
+          "statements": 6,
+          "covered": 6,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "requirement_impact",
+          "line": 300,
+          "statements": 4,
+          "covered": 4,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        }
+      ]
+    },
+    {
+      "path": "pqc_cli.py",
+      "summary": {
+        "covered_lines": 48,
+        "num_statements": 51,
+        "percent_covered": 90.1639344262295,
+        "percent_covered_display": "90",
+        "missing_lines": 3,
+        "excluded_lines": 0,
+        "percent_statements_covered": 94.11764705882354,
+        "percent_statements_covered_display": "94",
+        "num_branches": 10,
+        "num_partial_branches": 3,
+        "covered_branches": 7,
+        "missing_branches": 3,
+        "percent_branches_covered": 70.0,
+        "percent_branches_covered_display": "70"
+      },
+      "functions": [
+        {
+          "name": "read",
+          "line": 10,
+          "statements": 4,
+          "covered": 3,
+          "missing_lines": [
+            13
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "write",
+          "line": 17,
+          "statements": 2,
+          "covered": 2,
+          "missing_lines": [],
+          "status": "fully_exercised"
+        },
+        {
+          "name": "main",
+          "line": 22,
+          "statements": 35,
+          "covered": 34,
+          "missing_lines": [
+            44
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    },
+    {
+      "path": "public_owner.py",
+      "summary": {
+        "covered_lines": 61,
+        "num_statements": 72,
+        "percent_covered": 81.91489361702128,
+        "percent_covered_display": "82",
+        "missing_lines": 11,
+        "excluded_lines": 0,
+        "percent_statements_covered": 84.72222222222223,
+        "percent_statements_covered_display": "85",
+        "num_branches": 22,
+        "num_partial_branches": 6,
+        "covered_branches": 16,
+        "missing_branches": 6,
+        "percent_branches_covered": 72.72727272727273,
+        "percent_branches_covered_display": "73"
+      },
+      "functions": [
+        {
+          "name": "main",
+          "line": 16,
+          "statements": 52,
+          "covered": 44,
+          "missing_lines": [
+            48,
+            49,
+            55,
+            68,
+            71,
+            78,
+            79,
+            80
+          ],
+          "status": "partially_exercised"
+        },
+        {
+          "name": "main.read_output",
+          "line": 34,
+          "statements": 5,
+          "covered": 3,
+          "missing_lines": [
+            38,
+            39
+          ],
+          "status": "partially_exercised"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "route": "GET /",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/ci-evidence/status",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/docs",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/modules",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects",
+      "statuses": [
+        200,
+        400,
+        401,
+        503
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/engineering/assurance-reports",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/engineering/decisions",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/engineering/experiments",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/engineering/lifecycle",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/engineering/reports",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/engineering/systems",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/report",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/workflow/criteria/{criterion_id}/impact",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/workflow/events",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/workflow/features",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/workflow/features/{feature_id}",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/projects/{project_id}/workflow/report",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/quality",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /api/security/status",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /docs/oauth2-redirect",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /engineering",
+      "statuses": [
+        200,
+        303,
+        401
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /openapi.json",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /overview",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /owner/enter",
+      "statuses": [
+        303,
+        401,
+        403
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /owner/login",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /owner/status",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /protection",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /protection-client.js",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /quality",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /security-client.js",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "GET /systems",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "PATCH /api/projects/{project_id}/workflow/criteria/{criterion_id}",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/ci-evidence/verify",
+      "statuses": [
+        200,
+        422,
+        503
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects",
+      "statuses": [
+        201,
+        403,
+        413
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/code/analyze",
+      "statuses": [
+        200,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/bounded-check",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/contracts",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/debug",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/decisions",
+      "statuses": [
+        201
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/environment",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/mutation-audit",
+      "statuses": [
+        200,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/repository",
+      "statuses": [
+        200,
+        404,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/requirements",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/security-flow",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/specifications",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/specifications/{specification_id}/mutation-check",
+      "statuses": [
+        200,
+        404,
+        409,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/systems",
+      "statuses": [
+        200,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/verification/{report_id}/replay",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/engineering/verify-numeric",
+      "statuses": [
+        200,
+        404,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/requirements/analyze",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/workflow/criteria/{criterion_id}/approve",
+      "statuses": [
+        200,
+        404
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/workflow/criteria/{criterion_id}/code-links",
+      "statuses": [
+        201
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/workflow/criteria/{criterion_id}/evidence",
+      "statuses": [
+        201,
+        404,
+        409,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/workflow/evidence/{evidence_id}/review",
+      "statuses": [
+        200,
+        409
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/projects/{project_id}/workflow/features",
+      "statuses": [
+        201,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/security-audit",
+      "statuses": [
+        200,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /api/security-audit/compare",
+      "statuses": [
+        200,
+        422
+      ],
+      "successful_response_exercised": true
+    },
+    {
+      "route": "POST /owner/logout",
+      "statuses": [
+        200
+      ],
+      "successful_response_exercised": true
+    }
+  ],
+  "tests": {
+    "passed": 132,
+    "failed": 0,
+    "skipped": 0
+  },
+  "limits": [
+    "Execution coverage is not proof of correctness.",
+    "Only this trusted checkout is executed; uploaded customer code is never run.",
+    "Browser behavior requires a separate UI audit; JavaScript syntax is checked here.",
+    "Local report is not signed or independently authenticated."
+  ]
+}

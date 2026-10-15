@@ -1,0 +1,16 @@
+[Unit]
+Description=DevFlow encrypted tenant backups and restore drills
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=devflow-backup
+WorkingDirectory=/opt/devflow
+ExecStart=/opt/devflow/.venv/bin/python ops_job.py backup --config /etc/devflow/enterprise.json --backup-key /etc/devflow/backup.key --output-root /mnt/devflow-backups
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/var/lib/devflow /etc/devflow
+ReadWritePaths=/mnt/devflow-backups
+UMask=0077

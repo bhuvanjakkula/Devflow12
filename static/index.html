@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DevFlow 12 - Development Quality & Traceability Workspace</title>
+<style>
+:root{--bg:#070d19;--card:#0f1a2e;--card-border:#1f3352;--text:#e3ecfc;--muted:#8fa7ca;--accent:#4285f4;--mint:#34a853;--warn:#fbbc05;--danger:#ea4335}
+*{box-sizing:border-box}
+body{font:14px/1.6 system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:24px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;border-bottom:1px solid var(--card-border);padding-bottom:16px;margin-bottom:24px}
+.badge{font-size:11px;font-weight:700;letter-spacing:1px;background:rgba(66,133,244,.15);color:var(--accent);padding:4px 10px;border-radius:20px;border:1px solid rgba(66,133,244,.3);display:inline-block;margin-bottom:6px}
+h1{font-size:24px;font-weight:800;margin:0 0 4px;color:#fff}
+p.subtitle{color:var(--muted);margin:0;font-size:13px}
+nav{display:flex;gap:10px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:13px;padding:6px 14px;border-radius:8px;border:1px solid var(--card-border);background:var(--card);transition:all .2s}
+nav a:hover,nav a.active{color:#fff;border-color:var(--accent);background:rgba(66,133,244,.15)}
+.layout{display:grid;grid-template-columns:300px 1fr;gap:20px}
+@media(max-width:980px){.layout{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:20px;margin-bottom:18px}
+.card h2,.card h3{font-size:16px;font-weight:700;color:#fff;margin:0 0 12px}
+select,input,textarea{background:#0a1222;color:var(--text);border:1px solid var(--card-border);border-radius:8px;padding:9px 12px;font:inherit;width:100%;margin-bottom:10px}
+select:focus,input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px rgba(66,133,244,.25)}
+textarea{min-height:120px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12.5px}
+button.btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:9px 16px;font-weight:600;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:all .18s}
+button.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+button.btn-secondary{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--card-border)}
+button.btn-mint{background:var(--mint);color:#062312}
+button.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.modules-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:14px}
+.mod-card{background:#0a1222;border:1px solid var(--card-border);border-radius:8px;padding:12px;font-size:12px}
+.mod-card b{display:block;color:#fff;font-size:13px;margin-bottom:4px}
+.result-group{background:#080e1b;border:1px solid var(--card-border);border-radius:8px;padding:14px;margin-top:14px}
+.result-group h4{margin:0 0 8px;font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.6px}
+.item{padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px}
+.item:last-child{border-bottom:0}
+.status-msg{padding:10px 14px;border-radius:8px;margin-bottom:16px;font-size:13px;font-weight:600}
+.status-success{background:rgba(52,168,83,.18);color:#6ae196;border:1px solid rgba(52,168,83,.3)}
+.status-error{background:rgba(234,67,53,.18);color:#ff8a80;border:1px solid rgba(234,67,53,.3)}
+.metric{font-size:24px;font-weight:800;color:var(--mint)}
+.visible{display:block}
+</style>
+<script src="/security-client.js"></script>
+</head>
+<body>
+<header>
+  <div>
+    <span class="badge">DEVFLOW 12 // TRACEABILITY WORKSPACE</span>
+    <h1>Requirements, Static Code Scan & Synthesis</h1>
+    <p class="subtitle">Trace requirements into static code analysis, acceptance criteria and unified engineering documentation.</p>
+  </div>
+  <nav>
+    <a href="/" class="active">Traceability</a>
+    <a href="/engineering">Engineering</a>
+    <a href="/quality">Quality Gate</a>
+    <a href="/protection">Security Audit</a>
+    <a href="/systems">Systems Board</a>
+    <a href="/ai">AI Intelligence</a>
+    <a href="/api/docs">API Docs</a>
+  </nav>
+</header>
+
+<div id="status"></div>
+
+<div class="layout">
+  <aside>
+    <div class="card">
+      <h3>Active Project</h3>
+      <select id="projectSelect"></select>
+      <input id="projectName" placeholder="Project name" value="Invoice Portal">
+      <textarea id="projectDesc" placeholder="Description" style="min-height:60px">Small business invoice and payment tracking system</textarea>
+      <div style="display:flex;gap:8px">
+        <button id="createBtn" class="btn" style="flex:1">+ Create Project</button>
+        <button id="exampleBtn" class="btn btn-secondary">Sample Inputs</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>12 Core Engineering Modules</h3>
+      <div id="modules" class="modules-grid"></div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="card">
+      <h2>1. Requirements Analysis</h2>
+      <p style="color:var(--muted);font-size:13px;margin-top:0">Parse natural language requirements, detect ambiguities, and synthesize acceptance criteria.</p>
+      <textarea id="reqText">Customers must export invoices in JSON format within 500ms. Non-logged-in visitors must not export invoices. The process must be scalable and easy to use.</textarea>
+      <button id="reqBtn" class="btn btn-mint">Analyze Requirements →</button>
+      <div id="reqResults"></div>
+    </div>
+
+    <div class="card">
+      <h2>2. AST Static Code Scan</h2>
+      <p style="color:var(--muted);font-size:13px;margin-top:0">Parse Python AST, extract symbols and complexity metrics, and detect risk heuristics without executing code.</p>
+      <textarea id="codeText">import subprocess
+import requests
+
+def fetch_data(url):
+    return requests.get(url).json()
+
+def calculate(expression):
+    return eval(expression)
+
+subprocess.run("echo demo", shell=True)</textarea>
+      <button id="codeBtn" class="btn btn-mint">Scan Code →</button>
+      <div id="codeResults"></div>
+    </div>
+
+    <div class="card">
+      <h2>3. Unified Synthesis & Report Export</h2>
+      <p style="color:var(--muted);font-size:13px;margin-top:0">Synthesize requirement coverage, code review results, and next actions into an audited report.</p>
+      <div style="display:flex;gap:10px;margin-bottom:14px">
+        <button id="reportBtn" class="btn">Generate Report</button>
+        <button id="exportBtn" class="btn btn-secondary" disabled>Export JSON</button>
+      </div>
+      <div id="reportResults"></div>
+    </div>
+  </main>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  let selectedProject = null;
+  let cachedReport = null;
+  const $ = id => document.getElementById(id);
+
+  function message(text, isError = false) {
+    const s = $('status');
+    s.replaceChildren();
+    if (text) {
+      const d = document.createElement('div');
+      d.className = 'status-msg ' + (isError ? 'status-error' : 'status-success');
+      d.textContent = text;
+      s.appendChild(d);
+    }
+  }
+
+  async function api(path, method = 'GET', data) {
+    const res = await fetch(path, {
+      method,
+      headers: { 'Content-Type': 'application/json' },
+      body: data === undefined ? undefined : JSON.stringify(data)
+    });
+    const result = await res.json();
+    if (!res.ok) {
+      const err = typeof result.detail === 'string' ? result.detail : JSON.stringify(result.detail);
+      throw new Error(err || 'Request failed');
+    }
+    return result;
+  }
+
+  async function safeAction(callback) {
+    try {
+      await callback();
+    } catch (err) {
+      message(err.message || 'Action failed', true);
+    }
+  }
+
+  async function ensureProject() {
+    if (selectedProject) return selectedProject;
+    const res = await api('/api/projects');
+    if (res.projects && res.projects.length > 0) {
+      selectedProject = res.projects[0];
+      $('projectSelect').value = String(selectedProject.id);
+      return selectedProject;
+    }
+    const name = $('projectName').value.trim() || 'Master Engineering Project';
+    const desc = $('projectDesc').value.trim() || 'Default project workspace';
+    const p = await api('/api/projects', 'POST', { name, description: desc });
+    selectedProject = p;
+    await refreshProjects(p.id);
+    return selectedProject;
+  }
+
+  function appendItem(parent, text) {
+    const div = document.createElement('div');
+    div.className = 'item';
+    div.textContent = text;
+    parent.appendChild(div);
+  }
+
+  function resultSection(container, title, entries, renderer) {
+    const box = document.createElement('div');
+    box.className = 'result-group';
+    const h = document.createElement('h4');
+    h.textContent = title;
+    box.appendChild(h);
+    if (!entries || !entries.length) {
+      const empty = document.createElement('div');
+      empty.className = 'item';
+      empty.textContent = 'None identified.';
+      box.appendChild(empty);
+    } else {
+      entries.forEach(x => renderer ? renderer(box, x) : appendItem(box, x));
+    }
+    container.appendChild(box);
+  }
+
+  function renderRequirements(data) {
+    const root = $('reqResults');
+    root.replaceChildren();
+    root.classList.add('visible');
+    const m = document.createElement('div');
+    m.innerHTML = `<span class="metric">${data.clarity_indicator} / 100</span> <span style="color:var(--muted);font-size:12px">Clarity Score</span>`;
+    root.appendChild(m);
+
+    resultSection(root, 'Ambiguous Terms Flagged', data.ambiguities, (b, x) => appendItem(b, `${x.term}: ${x.recommendation}`));
+    resultSection(root, 'Open Questions to Clarify', data.open_questions);
+    resultSection(root, 'Synthesized Acceptance Criteria', data.acceptance_criteria_drafts, (b, x) => appendItem(b, `${x.id}: ${x.draft_acceptance_test}`));
+    resultSection(root, 'Recommended Test Plan', data.plan?.testing);
+  }
+
+  function renderCode(data) {
+    const root = $('codeResults');
+    root.replaceChildren();
+    root.classList.add('visible');
+    const m = data.metrics || {};
+    const info = document.createElement('div');
+    info.style.margin = '8px 0';
+    info.innerHTML = `<b>${m.lines || 0}</b> lines &middot; <b>${m.functions || 0}</b> functions &middot; <b>${m.classes || 0}</b> classes`;
+    root.appendChild(info);
+
+    resultSection(root, `Security & Code Findings (${data.findings?.length || 0})`, data.findings, (b, x) => {
+      const d = document.createElement('div');
+      d.className = 'item';
+      d.innerHTML = `<b style="color:var(--danger)">[Line ${x.line}] ${x.severity.toUpperCase()}: ${x.title}</b><div style="margin:2px 0">${x.details}</div><div style="color:var(--muted);font-size:11px">Recommended: ${x.recommendation}</div>`;
+      b.appendChild(d);
+    });
+
+    resultSection(root, 'Suggested Tests', data.test_suggestions);
+  }
+
+  function renderReport(data) {
+    const root = $('reportResults');
+    root.replaceChildren();
+    const meta = document.createElement('div');
+    meta.style.padding = '8px 0';
+    meta.innerHTML = `<span>Project: <b>${data.project?.name}</b></span> &middot; <span>Requirements: <b>${data.requirements_analyzed ? 'Analyzed' : 'Pending'}</b></span> &middot; <span>Code: <b>${data.python_code_scanned ? 'Scanned' : 'Pending'}</b></span>`;
+    root.appendChild(meta);
+
+    resultSection(root, 'Recommended Next Actions', data.next_actions);
+    cachedReport = data;
+    $('exportBtn').disabled = false;
+  }
+
+  async function loadModules() {
+    try {
+      const data = await api('/api/modules');
+      const grid = $('modules');
+      grid.replaceChildren();
+      (data.modules || []).forEach((m, i) => {
+        const c = document.createElement('div');
+        c.className = 'mod-card';
+        c.innerHTML = `<b>${i + 1}. ${m.name}</b><p style="margin:0;color:var(--muted)">${m.description}</p>`;
+        grid.appendChild(c);
+      });
+    } catch {}
+  }
+
+  async function refreshProjects(selectId) {
+    const res = await api('/api/projects');
+    const chooser = $('projectSelect');
+    chooser.replaceChildren();
+
+    (res.projects || []).forEach(p => {
+      const opt = document.createElement('option');
+      opt.value = String(p.id);
+      opt.textContent = `${p.name} (#${p.id})`;
+      chooser.appendChild(opt);
+    });
+
+    if (selectId && res.projects?.some(p => p.id === Number(selectId))) {
+      chooser.value = String(selectId);
+      selectedProject = res.projects.find(p => p.id === Number(selectId));
+    } else if (res.projects && res.projects.length > 0) {
+      chooser.value = String(res.projects[0].id);
+      selectedProject = res.projects[0];
+    }
+  }
+
+  $('createBtn').onclick = () => safeAction(async () => {
+    const name = $('projectName').value.trim() || 'New Workspace';
+    const description = $('projectDesc').value.trim() || '';
+    const p = await api('/api/projects', 'POST', { name, description });
+    selectedProject = p;
+    await refreshProjects(p.id);
+    message('Project created: ' + p.name);
+  });
+
+  $('projectSelect').onchange = () => safeAction(async () => {
+    const id = $('projectSelect').value;
+    if (id) {
+      const data = await api('/api/projects/' + id);
+      selectedProject = data.project;
+      if (data.requirements) renderRequirements(data.requirements.result);
+      if (data.code) renderCode(data.code.result);
+      message('Selected project: ' + selectedProject.name);
+    }
+  });
+
+  $('reqBtn').onclick = () => safeAction(async () => {
+    const p = await ensureProject();
+    const data = await api(`/api/projects/${p.id}/requirements/analyze`, 'POST', { text: $('reqText').value });
+    renderRequirements(data);
+    message('Requirements analyzed and recorded successfully.');
+  });
+
+  $('codeBtn').onclick = () => safeAction(async () => {
+    const p = await ensureProject();
+    const data = await api(`/api/projects/${p.id}/code/analyze`, 'POST', { code: $('codeText').value, language: 'python' });
+    renderCode(data);
+    message('Static code scan completed with AST analysis.');
+  });
+
+  $('reportBtn').onclick = () => safeAction(async () => {
+    const p = await ensureProject();
+    const report = await api(`/api/projects/${p.id}/report`);
+    renderReport(report);
+    message('Traceability report generated.');
+  });
+
+  $('exportBtn').onclick = () => {
+    if (!cachedReport) return;
+    const blob = new Blob([JSON.stringify(cachedReport, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `devflow12-project-${cachedReport.project?.id || 'export'}-report.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  $('exampleBtn').onclick = () => {
+    $('projectName').value = 'Invoice Portal';
+    $('projectDesc').value = 'Small business invoice tracking system';
+    $('reqText').value = 'Users must securely upload invoices quickly, view totals, and export reports. Admins can manage accounts. The system should be scalable and easy to use.';
+    $('codeText').value = 'import subprocess\nimport requests\n\ndef fetch_data(url):\n    return requests.get(url).json()\n\ndef calculate(expression):\n    return eval(expression)\n\nsubprocess.run("echo demo", shell=True)';
+    message('Sample inputs loaded.');
+  };
+
+  Promise.all([loadModules(), refreshProjects()]).catch(e => message('Server connection note: ' + e.message, true));
+})();
+</script>
+</body>
+</html>

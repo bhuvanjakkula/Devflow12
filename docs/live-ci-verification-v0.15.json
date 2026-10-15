@@ -1,0 +1,19 @@
+{
+  "jobs": [
+    {
+      "name": "tests (3.10)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "tests (3.12)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "head_sha": "0525ff811e130e99d17c4723dadfd32e62235e09",
+  "scope": "GitHub run and job metadata verified; no production deployment authorization",
+  "run_id": 38572682868,
+  "run_url": "https://github.com/bhuvanjakkula/DevFlow/actions/runs/38572682868",
+  "repository": "bhuvanjakkula/DevFlow"
+}

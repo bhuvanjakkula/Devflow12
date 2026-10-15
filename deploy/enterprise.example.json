@@ -1,0 +1,14 @@
+{
+  "issuer": "https://identity.example.com/tenant/v2.0",
+  "audience": "devflow-api",
+  "origin": "https://devflow.example.com",
+  "public_key": "/run/secrets/identity_public_key",
+  "audit_key": "/run/secrets/audit_key",
+  "data_root": "/srv/app/data/tenants",
+  "tenants": ["engineering"],
+  "identities": [
+    {"subject": "REPLACE_WITH_IDP_SUBJECT", "tenant": "engineering", "role": "admin"}
+  ],
+  "max_concurrency": 8,
+  "requests_per_minute": 120
+}

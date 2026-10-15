@@ -1,0 +1,16 @@
+# Optional overlay: explicitly enables outbound connectivity for OpenAI requests.
+services:
+  devflow:
+    environment:
+      DEVFLOW_OPENAI_ENABLED: "1"
+      OPENAI_API_KEY_FILE: /run/secrets/openai_api_key
+      OPENAI_MODEL: ${OPENAI_MODEL:?Set an OpenAI model supporting Responses structured outputs}
+      DEVFLOW_OPENAI_TENANTS: ${DEVFLOW_OPENAI_TENANTS:?List the tenant identifiers approved for OpenAI}
+      DEVFLOW_OPENAI_DAILY_LIMIT: ${DEVFLOW_OPENAI_DAILY_LIMIT:-20}
+    secrets: [openai_api_key]
+    networks: [private, openai_egress]
+networks:
+  openai_egress: {}
+secrets:
+  openai_api_key:
+    file: ./secrets/openai-api-key.txt

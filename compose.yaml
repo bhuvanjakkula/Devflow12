@@ -1,0 +1,10 @@
+services:
+  devflow:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - devflow_data:/srv/app/data
+    restart: unless-stopped
+volumes:
+  devflow_data:

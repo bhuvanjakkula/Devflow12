@@ -1,0 +1,14 @@
+DEVFLOW LOCAL OWNER ACCESS
+
+Double-click Open-DevFlow-Local.cmd. It refreshes this downloaded project's
+local server and opens a new one-use owner link in your default browser.
+Refreshing signs out existing browser sessions; project data is preserved.
+
+If you use another browser, copy the fresh link printed by the launcher into
+that browser within five minutes. A link works only once. Once signed in,
+use http://127.0.0.1:8000/engineering in that same browser profile.
+
+Owner profile: bhuvanjakkula@gmail.com
+This is local launcher access, not verified Gmail authentication.
+The server and database remain outside OneDrive in this downloaded folder.
+The server runs in the background. Running the launcher again refreshes access.

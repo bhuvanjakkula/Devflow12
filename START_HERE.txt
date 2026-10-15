@@ -1,0 +1,31 @@
+DEVFLOW 12 - COMPLETE PROJECT v0.19
+
+This package contains all distributable source, browser pages, tests, deployment
+templates, dependency declarations, setup documentation and engineering reports.
+FILE_MANIFEST.json lists every supplied file and its SHA-256 checksum.
+
+WINDOWS QUICK START (Python 3.12 recommended):
+1. Extract the ZIP to a normal folder. Open a terminal inside devflow12.
+2. python -m venv .venv
+3. .venv\Scripts\python.exe -m pip install -r requirements-production.lock
+4. .venv\Scripts\python.exe run.py
+5. Open the one-use owner link printed in the terminal.
+
+AI assistance is at /ai. Read docs/OPENAI_ASSISTANCE.md to configure your
+server-side OpenAI key and compatible model. No real API key is included.
+
+OPTIONAL FULL VERIFICATION:
+.venv\Scripts\python.exe -m pip install -r requirements-quality.txt
+.venv\Scripts\python.exe quality_gate.py
+Node.js is needed for JavaScript syntax verification. Optional PQC packages are
+declared in requirements-pqc.txt. Security scanners: requirements-security.txt.
+
+ENTERPRISE DEPLOYMENT:
+Read docs/ENTERPRISE_API.md. Docker/Compose files and proxy/scheduler examples
+are included. Supply your own identity, TLS, hosting and secret configuration.
+
+Private credentials, local/customer databases, installed dependency folders,
+virtual environments, caches and Git metadata are intentionally not included.
+Dependencies must be installed; this is not a preinstalled offline executable.
+Live OpenAI access and cloud deployment are not preconfigured. See README.md
+and the included assessment for functionality, evidence and remaining limits.

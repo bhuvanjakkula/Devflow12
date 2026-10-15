@@ -1,0 +1,5364 @@
+{
+  "snapshot_sha256": "69cc1e75d3db8977dea81b7ab11f5a1c8a2f2b7e4fd99287b196d1a92d947725",
+  "files": [
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 11,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "read_snapshot",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 31,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "main",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 52,
+        "functions": 2,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test read_snapshot with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test main with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "analyze_repo.py",
+      "sha256": "e79b517e33c4d10a30eeb009f78a58d84f213839426abb389e7aff536e5b9a92",
+      "imports": [
+        {
+          "module": "argparse",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "pathlib",
+          "level": 0,
+          "names": [
+            "Path"
+          ]
+        },
+        {
+          "module": "app.intelligence",
+          "level": 0,
+          "names": [
+            "repository_intelligence"
+          ]
+        },
+        {
+          "module": "app.engineering",
+          "level": 0,
+          "names": [
+            "Snapshot"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "read_snapshot",
+          "line": 11,
+          "end_line": 28,
+          "async": false,
+          "complexity": 8,
+          "arguments": [
+            "root"
+          ]
+        },
+        {
+          "name": "main",
+          "line": 31,
+          "end_line": 48,
+          "async": false,
+          "complexity": 2,
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 23,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "analyze_requirements",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 74,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "analyze_python_code",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 139,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "build_plan",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 158,
+        "functions": 4,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test analyze_requirements with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test _make_finding with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test analyze_python_code with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test build_plan with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/analysis.py",
+      "sha256": "1e96888befba2e284a100c998d166b28bbf7b7cb96f235715b75f1c462b19ada",
+      "imports": [
+        {
+          "module": "__future__",
+          "level": 0,
+          "names": [
+            "annotations"
+          ]
+        },
+        {
+          "module": "ast",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "re",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "typing",
+          "level": 0,
+          "names": [
+            "Any"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "analyze_requirements",
+          "line": 23,
+          "end_line": 67,
+          "async": false,
+          "complexity": 11,
+          "arguments": [
+            "text"
+          ]
+        },
+        {
+          "name": "_make_finding",
+          "line": 70,
+          "end_line": 71,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "line",
+            "severity",
+            "title",
+            "details",
+            "recommendation"
+          ]
+        },
+        {
+          "name": "analyze_python_code",
+          "line": 74,
+          "end_line": 136,
+          "async": false,
+          "complexity": 27,
+          "arguments": [
+            "code"
+          ]
+        },
+        {
+          "name": "build_plan",
+          "line": 139,
+          "end_line": 158,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "requirement_analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 27,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "finite_values",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 49,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "valid_target",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 56,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "validate_target",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 71,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "valid_target",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 76,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "save",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 86,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "specification",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 128,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "verification",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 139,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "security",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 151,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "reports",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 155,
+        "functions": 9,
+        "classes": 3
+      },
+      "test_suggestions": [
+        "Unit-test validate_target with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test save with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test specification with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test verification with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test security with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test reports with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test finite_values with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test valid_target with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/assurance.py",
+      "sha256": "11207ff7a5c70471031bded24b682a29ddd49b6807cee838c2b321ed4905338d",
+      "imports": [
+        {
+          "module": "keyword",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "math",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "re",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "typing",
+          "level": 0,
+          "names": [
+            "Literal"
+          ]
+        },
+        {
+          "module": "fastapi",
+          "level": 0,
+          "names": [
+            "APIRouter",
+            "HTTPException"
+          ]
+        },
+        {
+          "module": "pydantic",
+          "level": 0,
+          "names": [
+            "BaseModel",
+            "Field",
+            "StrictBool",
+            "StrictFloat",
+            "StrictInt",
+            "model_validator"
+          ]
+        },
+        {
+          "module": "app.analysis",
+          "level": 0,
+          "names": [
+            "UNCLEAR_TERMS"
+          ]
+        },
+        {
+          "module": "app.dataflow",
+          "level": 0,
+          "names": [
+            "scan_dataflow"
+          ]
+        },
+        {
+          "module": "app.engineering",
+          "level": 0,
+          "names": [
+            "Snapshot"
+          ]
+        },
+        {
+          "module": "app.numeric_verifier",
+          "level": 0,
+          "names": [
+            "verify_numeric"
+          ]
+        },
+        {
+          "module": "app.storage",
+          "level": 0,
+          "names": [
+            "db",
+            "get_project",
+            "now_iso"
+          ]
+        },
+        {
+          "module": "app.workflow",
+          "level": 0,
+          "names": [
+            "must_exist"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "validate_target",
+          "line": 56,
+          "end_line": 60,
+          "async": false,
+          "complexity": 3,
+          "arguments": [
+            "path",
+            "function"
+          ]
+        },
+        {
+          "name": "save",
+          "line": 76,
+          "end_line": 82,
+          "async": false,
+          "complexity": 3,
+          "arguments": [
+            "conn",
+            "project_id",
+            "kind",
+            "criterion",
+            "result"
+          ]
+        },
+        {
+          "name": "specification",
+          "line": 86,
+          "end_line": 124,
+          "async": false,
+          "complexity": 12,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "verification",
+          "line": 128,
+          "end_line": 135,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "security",
+          "line": 139,
+          "end_line": 147,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "reports",
+          "line": 151,
+          "end_line": 155,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "finite_values",
+          "line": 27,
+          "end_line": 34,
+          "async": false,
+          "complexity": 5,
+          "arguments": [
+            "self"
+          ]
+        },
+        {
+          "name": "valid_target",
+          "line": 49,
+          "end_line": 53,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "self"
+          ]
+        },
+        {
+          "name": "valid_target",
+          "line": 71,
+          "end_line": 73,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "self"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 12,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "scan_dataflow",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 56,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "expression",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 111,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "block",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 142,
+        "functions": 3,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test scan_dataflow with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test expression with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test block with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/dataflow.py",
+      "sha256": "2d5471f8b4e18b70407e6c54d1c23501dfec9ae924a9ac7678d4adb114daca73",
+      "imports": [
+        {
+          "module": "ast",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "app.intelligence",
+          "level": 0,
+          "names": [
+            "qualified"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "scan_dataflow",
+          "line": 12,
+          "end_line": 142,
+          "async": false,
+          "complexity": 48,
+          "arguments": [
+            "files"
+          ]
+        },
+        {
+          "name": "expression",
+          "line": 56,
+          "end_line": 109,
+          "async": false,
+          "complexity": 18,
+          "arguments": [
+            "node",
+            "state"
+          ]
+        },
+        {
+          "name": "block",
+          "line": 111,
+          "end_line": 129,
+          "async": false,
+          "complexity": 9,
+          "arguments": [
+            "statements",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 23,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "bounded_files",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 63,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "check_project",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 69,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "requirements",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 75,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "repository",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 96,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "reports",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 104,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "debug",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 110,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "contracts",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 116,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "environment",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 122,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "decision",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 133,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "decisions",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 142,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "lifecycle",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 145,
+        "functions": 11,
+        "classes": 6
+      },
+      "test_suggestions": [
+        "Unit-test check_project with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test requirements with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test repository with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test reports with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test debug with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test contracts with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test environment with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test decision with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/engineering.py",
+      "sha256": "7a5881089019d1f1221b9708b8cd7eb91573dcbc23ac2c64e7dc0077fdfaea08",
+      "imports": [
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "typing",
+          "level": 0,
+          "names": [
+            "Literal"
+          ]
+        },
+        {
+          "module": "fastapi",
+          "level": 0,
+          "names": [
+            "APIRouter",
+            "HTTPException"
+          ]
+        },
+        {
+          "module": "pydantic",
+          "level": 0,
+          "names": [
+            "BaseModel",
+            "Field",
+            "model_validator"
+          ]
+        },
+        {
+          "module": "app.intelligence",
+          "level": 0,
+          "names": [
+            "repository_intelligence",
+            "requirements_intelligence",
+            "debug_traceback",
+            "compare_contracts",
+            "environment_check"
+          ]
+        },
+        {
+          "module": "app.storage",
+          "level": 0,
+          "names": [
+            "db",
+            "get_project",
+            "now_iso"
+          ]
+        },
+        {
+          "module": "app.lifecycle",
+          "level": 0,
+          "names": [
+            "lifecycle_report"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "check_project",
+          "line": 63,
+          "end_line": 65,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "requirements",
+          "line": 69,
+          "end_line": 71,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "repository",
+          "line": 75,
+          "end_line": 92,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "reports",
+          "line": 96,
+          "end_line": 100,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "debug",
+          "line": 104,
+          "end_line": 106,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "contracts",
+          "line": 110,
+          "end_line": 112,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "environment",
+          "line": 116,
+          "end_line": 118,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "decision",
+          "line": 122,
+          "end_line": 129,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "decisions",
+          "line": 133,
+          "end_line": 138,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "lifecycle",
+          "line": 142,
+          "end_line": 145,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "bounded_files",
+          "line": 23,
+          "end_line": 34,
+          "async": false,
+          "complexity": 7,
+          "arguments": [
+            "self"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 13,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "qualified",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 21,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "inspect_source",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 38,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "finding",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 81,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "requirements_intelligence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 98,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "repository_intelligence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 162,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "debug_traceback",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 183,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "compare_contracts",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 198,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "environment_check",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 201,
+        "functions": 8,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test qualified with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test inspect_source with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test requirements_intelligence with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test repository_intelligence with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test debug_traceback with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test compare_contracts with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test environment_check with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test finding with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/intelligence.py",
+      "sha256": "bc47fdfddc7c5ac5e078808cd625e01b84a11adbdfdcdfc53dbb8f3a3fa2d89a",
+      "imports": [
+        {
+          "module": "__future__",
+          "level": 0,
+          "names": [
+            "annotations"
+          ]
+        },
+        {
+          "module": "ast",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "hashlib",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "re",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "collections",
+          "level": 0,
+          "names": [
+            "defaultdict"
+          ]
+        },
+        {
+          "module": "pathlib",
+          "level": 0,
+          "names": [
+            "PurePosixPath"
+          ]
+        },
+        {
+          "module": "app.analysis",
+          "level": 0,
+          "names": [
+            "analyze_python_code",
+            "analyze_requirements"
+          ]
+        },
+        {
+          "module": "app.dataflow",
+          "level": 0,
+          "names": [
+            "scan_dataflow"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "qualified",
+          "line": 13,
+          "end_line": 18,
+          "async": false,
+          "complexity": 3,
+          "arguments": [
+            "node",
+            "aliases"
+          ]
+        },
+        {
+          "name": "inspect_source",
+          "line": 21,
+          "end_line": 78,
+          "async": false,
+          "complexity": 26,
+          "arguments": [
+            "path",
+            "source"
+          ]
+        },
+        {
+          "name": "requirements_intelligence",
+          "line": 81,
+          "end_line": 95,
+          "async": false,
+          "complexity": 5,
+          "arguments": [
+            "text"
+          ]
+        },
+        {
+          "name": "repository_intelligence",
+          "line": 98,
+          "end_line": 159,
+          "async": false,
+          "complexity": 18,
+          "arguments": [
+            "files",
+            "baseline",
+            "changed",
+            "hours_per_point",
+            "hourly_rate"
+          ]
+        },
+        {
+          "name": "debug_traceback",
+          "line": 162,
+          "end_line": 180,
+          "async": false,
+          "complexity": 4,
+          "arguments": [
+            "traceback",
+            "files"
+          ]
+        },
+        {
+          "name": "compare_contracts",
+          "line": 183,
+          "end_line": 195,
+          "async": false,
+          "complexity": 6,
+          "arguments": [
+            "provider",
+            "consumer"
+          ]
+        },
+        {
+          "name": "environment_check",
+          "line": 198,
+          "end_line": 201,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "expected",
+            "actual"
+          ]
+        },
+        {
+          "name": "finding",
+          "line": 38,
+          "end_line": 41,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "node",
+            "rule",
+            "severity",
+            "message",
+            "remedy"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 14,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "latest_repository",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 61,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "lifecycle_report",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 111,
+        "functions": 3,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test latest_repository with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test criterion_impact with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test lifecycle_report with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/lifecycle.py",
+      "sha256": "eeb2cbdd57092c28065a9b0b12ed95631bd23c354465058043d5f1180dededb3",
+      "imports": [
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "collections",
+          "level": 0,
+          "names": [
+            "defaultdict"
+          ]
+        },
+        {
+          "module": "app.workflow",
+          "level": 0,
+          "names": [
+            "_report"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "latest_repository",
+          "line": 14,
+          "end_line": 16,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "conn",
+            "project_id"
+          ]
+        },
+        {
+          "name": "criterion_impact",
+          "line": 19,
+          "end_line": 58,
+          "async": false,
+          "complexity": 12,
+          "arguments": [
+            "conn",
+            "project_id",
+            "criterion"
+          ]
+        },
+        {
+          "name": "lifecycle_report",
+          "line": 61,
+          "end_line": 111,
+          "async": false,
+          "complexity": 18,
+          "arguments": [
+            "conn",
+            "project_id"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 17,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "lifespan",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 54,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "latest",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 63,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "index",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 68,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "overview",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 73,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "list_modules",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 78,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "list_projects",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 84,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "create_project",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 94,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "project_detail",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 100,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "check_requirements",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 110,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "check_code",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 121,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "get_report",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 159,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "engineering_page",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 160,
+        "functions": 12,
+        "classes": 3
+      },
+      "test_suggestions": [
+        "Unit-test lifespan with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test latest with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test index with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test overview with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test list_modules with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test list_projects with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test create_project with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test project_detail with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/main.py",
+      "sha256": "db6e93d6902437a925ad0ffa8bb912f06ddacbd25f70badc7c4759f34f054c91",
+      "imports": [
+        {
+          "module": "__future__",
+          "level": 0,
+          "names": [
+            "annotations"
+          ]
+        },
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "sqlite3",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "contextlib",
+          "level": 0,
+          "names": [
+            "asynccontextmanager"
+          ]
+        },
+        {
+          "module": "typing",
+          "level": 0,
+          "names": [
+            "Any"
+          ]
+        },
+        {
+          "module": "fastapi",
+          "level": 0,
+          "names": [
+            "FastAPI",
+            "HTTPException"
+          ]
+        },
+        {
+          "module": "fastapi.responses",
+          "level": 0,
+          "names": [
+            "FileResponse"
+          ]
+        },
+        {
+          "module": "pydantic",
+          "level": 0,
+          "names": [
+            "BaseModel",
+            "Field"
+          ]
+        },
+        {
+          "module": "app.analysis",
+          "level": 0,
+          "names": [
+            "analyze_python_code",
+            "analyze_requirements",
+            "build_plan"
+          ]
+        },
+        {
+          "module": "app.storage",
+          "level": 0,
+          "names": [
+            "ROOT",
+            "db",
+            "initialize",
+            "now_iso",
+            "get_project"
+          ]
+        },
+        {
+          "module": "app.workflow",
+          "level": 0,
+          "names": [
+            "router"
+          ]
+        },
+        {
+          "module": "app.engineering",
+          "level": 0,
+          "names": [
+            "router"
+          ]
+        },
+        {
+          "module": "app.assurance",
+          "level": 0,
+          "names": [
+            "router"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "lifespan",
+          "line": 17,
+          "end_line": 19,
+          "async": true,
+          "complexity": 1,
+          "arguments": [
+            "app"
+          ]
+        },
+        {
+          "name": "latest",
+          "line": 54,
+          "end_line": 59,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "conn",
+            "project_id",
+            "kind"
+          ]
+        },
+        {
+          "name": "index",
+          "line": 63,
+          "end_line": 64,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "overview",
+          "line": 68,
+          "end_line": 69,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "list_modules",
+          "line": 73,
+          "end_line": 74,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "list_projects",
+          "line": 78,
+          "end_line": 80,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "create_project",
+          "line": 84,
+          "end_line": 90,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "item"
+          ]
+        },
+        {
+          "name": "project_detail",
+          "line": 94,
+          "end_line": 96,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "check_requirements",
+          "line": 100,
+          "end_line": 106,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "check_code",
+          "line": 110,
+          "end_line": 117,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "get_report",
+          "line": 121,
+          "end_line": 145,
+          "async": false,
+          "complexity": 5,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "engineering_page",
+          "line": 159,
+          "end_line": 160,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 20,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "bounded",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 30,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "tick",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 35,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "expression",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 67,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "block",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 86,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "verify_numeric",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 143,
+        "functions": 6,
+        "classes": 2
+      },
+      "test_suggestions": [
+        "Unit-test bounded with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test verify_numeric with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test __init__ with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test tick with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test expression with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test block with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/numeric_verifier.py",
+      "sha256": "98e465c5045f8dd6e3cbba26bb3f0c57cab08ba9e3b6dc96c1488e310a2a773c",
+      "imports": [
+        {
+          "module": "ast",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "hashlib",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "math",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "operator",
+          "level": 0,
+          "names": []
+        }
+      ],
+      "symbols": [
+        {
+          "name": "bounded",
+          "line": 20,
+          "end_line": 23,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "name": "verify_numeric",
+          "line": 86,
+          "end_line": 143,
+          "async": false,
+          "complexity": 23,
+          "arguments": [
+            "source",
+            "function",
+            "cases"
+          ]
+        },
+        {
+          "name": "__init__",
+          "line": 27,
+          "end_line": 28,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "self"
+          ]
+        },
+        {
+          "name": "tick",
+          "line": 30,
+          "end_line": 33,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "self"
+          ]
+        },
+        {
+          "name": "expression",
+          "line": 35,
+          "end_line": 65,
+          "async": false,
+          "complexity": 16,
+          "arguments": [
+            "self",
+            "node",
+            "env"
+          ]
+        },
+        {
+          "name": "block",
+          "line": 67,
+          "end_line": 83,
+          "async": false,
+          "complexity": 10,
+          "arguments": [
+            "self",
+            "statements",
+            "env"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 26,
+          "severity": "medium",
+          "title": "Overly broad exception handling",
+          "details": "May hide unexpected errors.",
+          "recommendation": "Catch specific exceptions and log unexpected failures."
+        },
+        {
+          "line": 18,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "db",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 33,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "now_iso",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 37,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "get_project",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 44,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "initialize",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 139,
+        "functions": 4,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test db with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test now_iso with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test get_project with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test initialize with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/storage.py",
+      "sha256": "ceb33698270f8db47e280c327b9b64d63896cc7a5675826b43ce0bbfb59ee8e1",
+      "imports": [
+        {
+          "module": "__future__",
+          "level": 0,
+          "names": [
+            "annotations"
+          ]
+        },
+        {
+          "module": "os",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "sqlite3",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "contextlib",
+          "level": 0,
+          "names": [
+            "contextmanager"
+          ]
+        },
+        {
+          "module": "datetime",
+          "level": 0,
+          "names": [
+            "datetime",
+            "timezone"
+          ]
+        },
+        {
+          "module": "pathlib",
+          "level": 0,
+          "names": [
+            "Path"
+          ]
+        },
+        {
+          "module": "typing",
+          "level": 0,
+          "names": [
+            "Any"
+          ]
+        },
+        {
+          "module": "fastapi",
+          "level": 0,
+          "names": [
+            "HTTPException"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "db",
+          "line": 18,
+          "end_line": 30,
+          "async": false,
+          "complexity": 2,
+          "arguments": []
+        },
+        {
+          "name": "now_iso",
+          "line": 33,
+          "end_line": 34,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "get_project",
+          "line": 37,
+          "end_line": 41,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "conn",
+            "project_id"
+          ]
+        },
+        {
+          "name": "initialize",
+          "line": 44,
+          "end_line": 139,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 57,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "must_exist",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 76,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "record_event",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 83,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "clean",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 175,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "create_feature",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 191,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "list_features",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 199,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "get_feature",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 206,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "edit_criterion",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 223,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "approve_criterion",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 235,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "create_code_link",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 246,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "create_evidence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 269,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "review_evidence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 283,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "traceability_report",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 289,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "workflow_events",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 300,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "requirement_impact",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 304,
+        "functions": 18,
+        "classes": 6
+      },
+      "test_suggestions": [
+        "Unit-test must_exist with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test record_event with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test clean with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test generate_drafts with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test _feature_snapshot with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test _criterion_snapshot with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test _report with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test create_feature with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "app/workflow.py",
+      "sha256": "0a4596a5be5bc890c3970365b525c2474b4255decb7773c77d3d18c185d3c0f7",
+      "imports": [
+        {
+          "module": "__future__",
+          "level": 0,
+          "names": [
+            "annotations"
+          ]
+        },
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "re",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "sqlite3",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "collections",
+          "level": 0,
+          "names": [
+            "Counter"
+          ]
+        },
+        {
+          "module": "typing",
+          "level": 0,
+          "names": [
+            "Literal"
+          ]
+        },
+        {
+          "module": "fastapi",
+          "level": 0,
+          "names": [
+            "APIRouter",
+            "HTTPException"
+          ]
+        },
+        {
+          "module": "pydantic",
+          "level": 0,
+          "names": [
+            "BaseModel",
+            "Field"
+          ]
+        },
+        {
+          "module": "app.analysis",
+          "level": 0,
+          "names": [
+            "analyze_requirements"
+          ]
+        },
+        {
+          "module": "app.storage",
+          "level": 0,
+          "names": [
+            "db",
+            "get_project",
+            "now_iso"
+          ]
+        },
+        {
+          "module": "app.lifecycle",
+          "level": 0,
+          "names": [
+            "criterion_impact"
+          ]
+        },
+        {
+          "module": "app.lifecycle",
+          "level": 0,
+          "names": [
+            "criterion_impact"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "must_exist",
+          "line": 57,
+          "end_line": 73,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "conn",
+            "table",
+            "column",
+            "row_id",
+            "project_id"
+          ]
+        },
+        {
+          "name": "record_event",
+          "line": 76,
+          "end_line": 80,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "conn",
+            "project_id",
+            "action",
+            "object_type",
+            "object_id",
+            "details"
+          ]
+        },
+        {
+          "name": "clean",
+          "line": 83,
+          "end_line": 87,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "value",
+            "label",
+            "minimum"
+          ]
+        },
+        {
+          "name": "generate_drafts",
+          "line": 90,
+          "end_line": 104,
+          "async": false,
+          "complexity": 3,
+          "arguments": [
+            "customer_text"
+          ]
+        },
+        {
+          "name": "_feature_snapshot",
+          "line": 107,
+          "end_line": 111,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "conn",
+            "feature_id"
+          ]
+        },
+        {
+          "name": "_criterion_snapshot",
+          "line": 114,
+          "end_line": 150,
+          "async": false,
+          "complexity": 13,
+          "arguments": [
+            "conn",
+            "criterion"
+          ]
+        },
+        {
+          "name": "_report",
+          "line": 153,
+          "end_line": 171,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "conn",
+            "project_id"
+          ]
+        },
+        {
+          "name": "create_feature",
+          "line": 175,
+          "end_line": 187,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "list_features",
+          "line": 191,
+          "end_line": 195,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "get_feature",
+          "line": 199,
+          "end_line": 202,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "feature_id"
+          ]
+        },
+        {
+          "name": "edit_criterion",
+          "line": 206,
+          "end_line": 219,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "criterion_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "approve_criterion",
+          "line": 223,
+          "end_line": 231,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "criterion_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "create_code_link",
+          "line": 235,
+          "end_line": 242,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "criterion_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "create_evidence",
+          "line": 246,
+          "end_line": 265,
+          "async": false,
+          "complexity": 4,
+          "arguments": [
+            "project_id",
+            "criterion_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "review_evidence",
+          "line": 269,
+          "end_line": 279,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id",
+            "evidence_id",
+            "payload"
+          ]
+        },
+        {
+          "name": "traceability_report",
+          "line": 283,
+          "end_line": 285,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "workflow_events",
+          "line": 289,
+          "end_line": 296,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "project_id"
+          ]
+        },
+        {
+          "name": "requirement_impact",
+          "line": 300,
+          "end_line": 304,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "project_id",
+            "criterion_id"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [],
+      "metrics": {
+        "lines": 19,
+        "functions": 0,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Add tests for the module's observable behavior and error paths."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "package_release.py",
+      "sha256": "7fecff78258192ea80ea6cbe2fdc3b22e5402dd64d875ece6fa29de8452047b1",
+      "imports": [
+        {
+          "module": "hashlib",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "pathlib",
+          "level": 0,
+          "names": [
+            "Path"
+          ]
+        },
+        {
+          "module": "zipfile",
+          "level": 0,
+          "names": [
+            "ZipFile",
+            "ZIP_DEFLATED"
+          ]
+        }
+      ],
+      "symbols": []
+    },
+    {
+      "language": "python",
+      "findings": [],
+      "metrics": {
+        "lines": 5,
+        "functions": 0,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Add tests for the module's observable behavior and error paths."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "run.py",
+      "sha256": "e772bcdff15ce3761df38a661abfe57ecb72e7191fd995592b4ecf7eddf47276",
+      "imports": [
+        {
+          "module": "uvicorn",
+          "level": 0,
+          "names": []
+        }
+      ],
+      "symbols": []
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 14,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_requirement_checks",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 20,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_scanner_flags_unsafe_patterns",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 27,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_scanner_never_executes_code",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 34,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_end_to_end",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 50,
+        "functions": 4,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test test_requirement_checks with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_scanner_flags_unsafe_patterns with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_scanner_never_executes_code with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_end_to_end with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "tests/test_app.py",
+      "sha256": "f4dbffd5d6a5f5bac029f63208fd6cc3a940dc2b9c4a1b347f76be775ea13111",
+      "imports": [
+        {
+          "module": "os",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "tempfile",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "pathlib",
+          "level": 0,
+          "names": [
+            "Path"
+          ]
+        },
+        {
+          "module": "fastapi.testclient",
+          "level": 0,
+          "names": [
+            "TestClient"
+          ]
+        },
+        {
+          "module": "app.main",
+          "level": 0,
+          "names": [
+            "app",
+            "initialize"
+          ]
+        },
+        {
+          "module": "app.analysis",
+          "level": 0,
+          "names": [
+            "analyze_python_code",
+            "analyze_requirements"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "test_requirement_checks",
+          "line": 14,
+          "end_line": 17,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_scanner_flags_unsafe_patterns",
+          "line": 20,
+          "end_line": 24,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_scanner_never_executes_code",
+          "line": 27,
+          "end_line": 31,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_end_to_end",
+          "line": 34,
+          "end_line": 50,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 13,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "example",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 17,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_numeric_verifier_detects_real_counterexample",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 25,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_supported_interpreter_matches_known_python_semantics",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 31,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_short_circuit_prevents_unreached_division_error",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 36,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_boolean_distinct_from_numeric_and_zero_division",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 43,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_verifier_rejects_host_operations_without_running_them",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 55,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_unsupported_syntax_never_claims_a_pass",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 59,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_empty_case_set_and_huge_constant_are_rejected",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 64,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_definition_time_side_effects_are_rejected",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 71,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_dataflow_tracks_alias_assignments_and_helper_calls",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 80,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_parameterized_sql_and_safe_reassignment_do_not_flag",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 85,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_interpolated_query_and_branch_merge_are_flagged",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 90,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "make_project",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 99,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_structured_spec_clarification_and_real_test_generation",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 126,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_verification_is_bound_to_revision_and_source_without_upgrading_evidence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 145,
+        "functions": 15,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test example with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_numeric_verifier_detects_real_counterexample with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_supported_interpreter_matches_known_python_semantics with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_short_circuit_prevents_unreached_division_error with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_boolean_distinct_from_numeric_and_zero_division with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_verifier_rejects_host_operations_without_running_them with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_unsupported_syntax_never_claims_a_pass with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_empty_case_set_and_huge_constant_are_rejected with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "tests/test_assurance.py",
+      "sha256": "dc2d10869883360eb3c2711ed2760b29499bc683e022ccd4132bd02c3b0587eb",
+      "imports": [
+        {
+          "module": "ast",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "subprocess",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "sys",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "pytest",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "fastapi.testclient",
+          "level": 0,
+          "names": [
+            "TestClient"
+          ]
+        },
+        {
+          "module": "app.main",
+          "level": 0,
+          "names": [
+            "app"
+          ]
+        },
+        {
+          "module": "app.dataflow",
+          "level": 0,
+          "names": [
+            "scan_dataflow"
+          ]
+        },
+        {
+          "module": "app.numeric_verifier",
+          "level": 0,
+          "names": [
+            "verify_numeric"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "example",
+          "line": 13,
+          "end_line": 14,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "value",
+            "expected"
+          ]
+        },
+        {
+          "name": "test_numeric_verifier_detects_real_counterexample",
+          "line": 17,
+          "end_line": 21,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_supported_interpreter_matches_known_python_semantics",
+          "line": 25,
+          "end_line": 28,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "value"
+          ]
+        },
+        {
+          "name": "test_short_circuit_prevents_unreached_division_error",
+          "line": 31,
+          "end_line": 33,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_boolean_distinct_from_numeric_and_zero_division",
+          "line": 36,
+          "end_line": 40,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_verifier_rejects_host_operations_without_running_them",
+          "line": 43,
+          "end_line": 51,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_unsupported_syntax_never_claims_a_pass",
+          "line": 55,
+          "end_line": 56,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "source"
+          ]
+        },
+        {
+          "name": "test_empty_case_set_and_huge_constant_are_rejected",
+          "line": 59,
+          "end_line": 61,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_definition_time_side_effects_are_rejected",
+          "line": 64,
+          "end_line": 68,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_dataflow_tracks_alias_assignments_and_helper_calls",
+          "line": 71,
+          "end_line": 77,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_parameterized_sql_and_safe_reassignment_do_not_flag",
+          "line": 80,
+          "end_line": 82,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_interpolated_query_and_branch_merge_are_flagged",
+          "line": 85,
+          "end_line": 87,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "make_project",
+          "line": 90,
+          "end_line": 96,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client"
+          ]
+        },
+        {
+          "name": "test_structured_spec_clarification_and_real_test_generation",
+          "line": 99,
+          "end_line": 123,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_verification_is_bound_to_revision_and_source_without_upgrading_evidence",
+          "line": 126,
+          "end_line": 145,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 10,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_alias_security_and_behavior_checks",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 24,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_safe_calls_are_not_flagged",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 33,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_transitive_change_impact_relative_imports_and_deletions",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 45,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_contradiction_and_traceback",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 53,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_contract_and_environment_drift",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 60,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_never_executes_and_snapshot_hash_changes",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 70,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_engineering_api_persistence_isolation_and_validation",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 91,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_syntax_errors_remain_findings",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 96,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_deleted_dependency_impacts_surviving_importer",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 103,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_cli_snapshot_reader",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 109,
+        "functions": 10,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test test_alias_security_and_behavior_checks with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_safe_calls_are_not_flagged with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_transitive_change_impact_relative_imports_and_deletions with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_contradiction_and_traceback with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_contract_and_environment_drift with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_never_executes_and_snapshot_hash_changes with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_engineering_api_persistence_isolation_and_validation with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_syntax_errors_remain_findings with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "tests/test_engineering.py",
+      "sha256": "c0aadfa9255620bf1a72be36a1aea3159a9f7a5b557cc449b1085206a0096360",
+      "imports": [
+        {
+          "module": "json",
+          "level": 0,
+          "names": []
+        },
+        {
+          "module": "fastapi.testclient",
+          "level": 0,
+          "names": [
+            "TestClient"
+          ]
+        },
+        {
+          "module": "app.main",
+          "level": 0,
+          "names": [
+            "app"
+          ]
+        },
+        {
+          "module": "app.intelligence",
+          "level": 0,
+          "names": [
+            "inspect_source",
+            "repository_intelligence",
+            "requirements_intelligence",
+            "debug_traceback",
+            "compare_contracts",
+            "environment_check"
+          ]
+        },
+        {
+          "module": "analyze_repo",
+          "level": 0,
+          "names": [
+            "read_snapshot"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "test_alias_security_and_behavior_checks",
+          "line": 10,
+          "end_line": 21,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_safe_calls_are_not_flagged",
+          "line": 24,
+          "end_line": 30,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_transitive_change_impact_relative_imports_and_deletions",
+          "line": 33,
+          "end_line": 42,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_contradiction_and_traceback",
+          "line": 45,
+          "end_line": 50,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_contract_and_environment_drift",
+          "line": 53,
+          "end_line": 57,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_never_executes_and_snapshot_hash_changes",
+          "line": 60,
+          "end_line": 67,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_engineering_api_persistence_isolation_and_validation",
+          "line": 70,
+          "end_line": 88,
+          "async": false,
+          "complexity": 2,
+          "arguments": []
+        },
+        {
+          "name": "test_syntax_errors_remain_findings",
+          "line": 91,
+          "end_line": 93,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_deleted_dependency_impacts_surviving_importer",
+          "line": 96,
+          "end_line": 100,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_cli_snapshot_reader",
+          "line": 103,
+          "end_line": 109,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "tmp_path"
+          ]
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 5,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "setup_feature",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 20,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_requirement_revision_propagates_through_modules",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 46,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_missing_snapshot_and_cross_project_impact",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 58,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_unmapped_links_and_high_findings_block_review",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 63,
+        "functions": 4,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test setup_feature with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_requirement_revision_propagates_through_modules with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_missing_snapshot_and_cross_project_impact with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test test_unmapped_links_and_high_findings_block_review with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "tests/test_lifecycle.py",
+      "sha256": "ced5b81de001ea63233cc7172dea1129f80db19e436c5c4225b5b1932c938f04",
+      "imports": [
+        {
+          "module": "fastapi.testclient",
+          "level": 0,
+          "names": [
+            "TestClient"
+          ]
+        },
+        {
+          "module": "app.main",
+          "level": 0,
+          "names": [
+            "app"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "setup_feature",
+          "line": 5,
+          "end_line": 12,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client"
+          ]
+        },
+        {
+          "name": "test_requirement_revision_propagates_through_modules",
+          "line": 20,
+          "end_line": 43,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_missing_snapshot_and_cross_project_impact",
+          "line": 46,
+          "end_line": 55,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        },
+        {
+          "name": "test_unmapped_links_and_high_findings_block_review",
+          "line": 58,
+          "end_line": 63,
+          "async": false,
+          "complexity": 1,
+          "arguments": []
+        }
+      ]
+    },
+    {
+      "language": "python",
+      "findings": [
+        {
+          "line": 8,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "client_for",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 13,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "create_project",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 19,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "post_feature",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 25,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "approve",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 31,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "add_link",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 37,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "evidence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 46,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "review",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 53,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "status",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 60,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_full_workflow_and_revision_invalidates_evidence",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 95,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_failures_superseding_reports_and_rejections",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 117,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_cross_project_references_are_rejected",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 136,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_blank_text_is_rejected_and_report_without_features",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        },
+        {
+          "line": 146,
+          "severity": "low",
+          "title": "Missing function documentation",
+          "details": "test_workflow_page_is_served",
+          "recommendation": "Document inputs, outputs, and failure cases."
+        }
+      ],
+      "metrics": {
+        "lines": 152,
+        "functions": 13,
+        "classes": 0
+      },
+      "test_suggestions": [
+        "Unit-test client_for with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test create_project with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test post_feature with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test approve with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test add_link with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test evidence with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test review with normal inputs, invalid inputs, boundary values and failure cases.",
+        "Unit-test status with normal inputs, invalid inputs, boundary values and failure cases."
+      ],
+      "notice": "Non-executing static heuristics. No scanner can establish that code is secure or correct.",
+      "path": "tests/test_workflow.py",
+      "sha256": "18bd3d83f6873c2796584f33b61a22c5a14b30ea426ea6a18fec639d362557df",
+      "imports": [
+        {
+          "module": "fastapi.testclient",
+          "level": 0,
+          "names": [
+            "TestClient"
+          ]
+        },
+        {
+          "module": "app.main",
+          "level": 0,
+          "names": [
+            "app"
+          ]
+        },
+        {
+          "module": "app",
+          "level": 0,
+          "names": [
+            "storage"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "name": "client_for",
+          "line": 8,
+          "end_line": 10,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "monkeypatch",
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "create_project",
+          "line": 13,
+          "end_line": 16,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client",
+            "name"
+          ]
+        },
+        {
+          "name": "post_feature",
+          "line": 19,
+          "end_line": 22,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client",
+            "project_id",
+            "text"
+          ]
+        },
+        {
+          "name": "approve",
+          "line": 25,
+          "end_line": 28,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client",
+            "project_id",
+            "criterion_id"
+          ]
+        },
+        {
+          "name": "add_link",
+          "line": 31,
+          "end_line": 34,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client",
+            "pid",
+            "cid",
+            "reference"
+          ]
+        },
+        {
+          "name": "evidence",
+          "line": 37,
+          "end_line": 43,
+          "async": false,
+          "complexity": 2,
+          "arguments": [
+            "client",
+            "pid",
+            "cid",
+            "link",
+            "outcome",
+            "method"
+          ]
+        },
+        {
+          "name": "review",
+          "line": 46,
+          "end_line": 50,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client",
+            "pid",
+            "evidence_id",
+            "decision"
+          ]
+        },
+        {
+          "name": "status",
+          "line": 53,
+          "end_line": 57,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "client",
+            "pid"
+          ]
+        },
+        {
+          "name": "test_full_workflow_and_revision_invalidates_evidence",
+          "line": 60,
+          "end_line": 92,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "monkeypatch",
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_failures_superseding_reports_and_rejections",
+          "line": 95,
+          "end_line": 114,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "monkeypatch",
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_cross_project_references_are_rejected",
+          "line": 117,
+          "end_line": 133,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "monkeypatch",
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_blank_text_is_rejected_and_report_without_features",
+          "line": 136,
+          "end_line": 143,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "monkeypatch",
+            "tmp_path"
+          ]
+        },
+        {
+          "name": "test_workflow_page_is_served",
+          "line": 146,
+          "end_line": 152,
+          "async": false,
+          "complexity": 1,
+          "arguments": [
+            "monkeypatch",
+            "tmp_path"
+          ]
+        }
+      ]
+    }
+  ],
+  "security_flow": {
+    "findings": [],
+    "status": "analysis_complete_within_supported_scope",
+    "iterations": 2,
+    "diagnostics": [],
+    "limitations": [
+      "Conservative potential flows, not confirmed vulnerabilities.",
+      "Function parameters are treated as potentially untrusted; unknown calls preserve taint.",
+      "Top-level functions and static helper imports only. Object fields, loops, exception flow and dynamic dispatch are not fully modeled."
+    ]
+  },
+  "dependency_graph": {
+    "analyze_repo.py": [
+      "app/engineering.py",
+      "app/intelligence.py"
+    ],
+    "app/analysis.py": [],
+    "app/assurance.py": [
+      "app/analysis.py",
+      "app/dataflow.py",
+      "app/engineering.py",
+      "app/numeric_verifier.py",
+      "app/storage.py",
+      "app/workflow.py"
+    ],
+    "app/dataflow.py": [
+      "app/intelligence.py"
+    ],
+    "app/engineering.py": [
+      "app/intelligence.py",
+      "app/lifecycle.py",
+      "app/storage.py"
+    ],
+    "app/intelligence.py": [
+      "app/analysis.py",
+      "app/dataflow.py"
+    ],
+    "app/lifecycle.py": [
+      "app/workflow.py"
+    ],
+    "app/main.py": [
+      "app/analysis.py",
+      "app/assurance.py",
+      "app/engineering.py",
+      "app/storage.py",
+      "app/workflow.py"
+    ],
+    "app/numeric_verifier.py": [],
+    "app/storage.py": [],
+    "app/workflow.py": [
+      "app/analysis.py",
+      "app/lifecycle.py",
+      "app/storage.py"
+    ],
+    "package_release.py": [],
+    "run.py": [],
+    "tests/test_app.py": [
+      "app/analysis.py",
+      "app/main.py"
+    ],
+    "tests/test_assurance.py": [
+      "app/dataflow.py",
+      "app/main.py",
+      "app/numeric_verifier.py"
+    ],
+    "tests/test_engineering.py": [
+      "analyze_repo.py",
+      "app/intelligence.py",
+      "app/main.py"
+    ],
+    "tests/test_lifecycle.py": [
+      "app/main.py"
+    ],
+    "tests/test_workflow.py": [
+      "app/main.py",
+      "app/storage.py"
+    ]
+  },
+  "changed_files": [
+    "analyze_repo.py",
+    "app/assurance.py",
+    "app/dataflow.py",
+    "app/engineering.py",
+    "app/intelligence.py",
+    "app/lifecycle.py",
+    "app/main.py",
+    "app/numeric_verifier.py",
+    "app/storage.py",
+    "app/workflow.py",
+    "package_release.py",
+    "tests/test_assurance.py",
+    "tests/test_engineering.py",
+    "tests/test_lifecycle.py",
+    "tests/test_workflow.py"
+  ],
+  "impacted_files": [
+    "analyze_repo.py",
+    "app/assurance.py",
+    "app/dataflow.py",
+    "app/engineering.py",
+    "app/intelligence.py",
+    "app/lifecycle.py",
+    "app/main.py",
+    "app/numeric_verifier.py",
+    "app/storage.py",
+    "app/workflow.py",
+    "package_release.py",
+    "tests/test_app.py",
+    "tests/test_assurance.py",
+    "tests/test_engineering.py",
+    "tests/test_lifecycle.py",
+    "tests/test_workflow.py"
+  ],
+  "regression_targets": [
+    "tests/test_app.py",
+    "tests/test_assurance.py",
+    "tests/test_engineering.py",
+    "tests/test_lifecycle.py",
+    "tests/test_workflow.py"
+  ],
+  "findings": [
+    {
+      "line": 11,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "read_snapshot",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "analyze_repo.py"
+    },
+    {
+      "line": 31,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "main",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "analyze_repo.py"
+    },
+    {
+      "line": 23,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "analyze_requirements",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/analysis.py"
+    },
+    {
+      "line": 74,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "analyze_python_code",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/analysis.py"
+    },
+    {
+      "line": 139,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "build_plan",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/analysis.py"
+    },
+    {
+      "line": 27,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "finite_values",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 49,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "valid_target",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 56,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "validate_target",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 71,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "valid_target",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 76,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "save",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 86,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "specification",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 128,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "verification",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 139,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "security",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 151,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "reports",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/assurance.py"
+    },
+    {
+      "line": 12,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "scan_dataflow",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/dataflow.py"
+    },
+    {
+      "line": 56,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "expression",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/dataflow.py"
+    },
+    {
+      "line": 111,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "block",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/dataflow.py"
+    },
+    {
+      "line": 23,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "bounded_files",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 63,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "check_project",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 69,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "requirements",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 75,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "repository",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 96,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "reports",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 104,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "debug",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 110,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "contracts",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 116,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "environment",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 122,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "decision",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 133,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "decisions",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 142,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "lifecycle",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/engineering.py"
+    },
+    {
+      "line": 13,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "qualified",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 21,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "inspect_source",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 38,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "finding",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 81,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "requirements_intelligence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 98,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "repository_intelligence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 162,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "debug_traceback",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 183,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "compare_contracts",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 198,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "environment_check",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/intelligence.py"
+    },
+    {
+      "line": 14,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "latest_repository",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/lifecycle.py"
+    },
+    {
+      "line": 61,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "lifecycle_report",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/lifecycle.py"
+    },
+    {
+      "line": 17,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "lifespan",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 54,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "latest",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 63,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "index",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 68,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "overview",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 73,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "list_modules",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 78,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "list_projects",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 84,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "create_project",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 94,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "project_detail",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 100,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "check_requirements",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 110,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "check_code",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 121,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "get_report",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 159,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "engineering_page",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/main.py"
+    },
+    {
+      "line": 20,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "bounded",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/numeric_verifier.py"
+    },
+    {
+      "line": 30,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "tick",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/numeric_verifier.py"
+    },
+    {
+      "line": 35,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "expression",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/numeric_verifier.py"
+    },
+    {
+      "line": 67,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "block",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/numeric_verifier.py"
+    },
+    {
+      "line": 86,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "verify_numeric",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/numeric_verifier.py"
+    },
+    {
+      "line": 26,
+      "severity": "medium",
+      "title": "Overly broad exception handling",
+      "details": "May hide unexpected errors.",
+      "recommendation": "Catch specific exceptions and log unexpected failures.",
+      "path": "app/storage.py"
+    },
+    {
+      "line": 18,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "db",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/storage.py"
+    },
+    {
+      "line": 33,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "now_iso",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/storage.py"
+    },
+    {
+      "line": 37,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "get_project",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/storage.py"
+    },
+    {
+      "line": 44,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "initialize",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/storage.py"
+    },
+    {
+      "line": 57,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "must_exist",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 76,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "record_event",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 83,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "clean",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 175,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "create_feature",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 191,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "list_features",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 199,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "get_feature",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 206,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "edit_criterion",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 223,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "approve_criterion",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 235,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "create_code_link",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 246,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "create_evidence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 269,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "review_evidence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 283,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "traceability_report",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 289,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "workflow_events",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 300,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "requirement_impact",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "app/workflow.py"
+    },
+    {
+      "line": 14,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_requirement_checks",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_app.py"
+    },
+    {
+      "line": 20,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_scanner_flags_unsafe_patterns",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_app.py"
+    },
+    {
+      "line": 27,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_scanner_never_executes_code",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_app.py"
+    },
+    {
+      "line": 34,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_end_to_end",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_app.py"
+    },
+    {
+      "line": 13,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "example",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 17,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_numeric_verifier_detects_real_counterexample",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 25,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_supported_interpreter_matches_known_python_semantics",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 31,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_short_circuit_prevents_unreached_division_error",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 36,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_boolean_distinct_from_numeric_and_zero_division",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 43,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_verifier_rejects_host_operations_without_running_them",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 55,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_unsupported_syntax_never_claims_a_pass",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 59,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_empty_case_set_and_huge_constant_are_rejected",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 64,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_definition_time_side_effects_are_rejected",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 71,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_dataflow_tracks_alias_assignments_and_helper_calls",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 80,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_parameterized_sql_and_safe_reassignment_do_not_flag",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 85,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_interpolated_query_and_branch_merge_are_flagged",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 90,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "make_project",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 99,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_structured_spec_clarification_and_real_test_generation",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 126,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_verification_is_bound_to_revision_and_source_without_upgrading_evidence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_assurance.py"
+    },
+    {
+      "line": 10,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_alias_security_and_behavior_checks",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 24,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_safe_calls_are_not_flagged",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 33,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_transitive_change_impact_relative_imports_and_deletions",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 45,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_contradiction_and_traceback",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 53,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_contract_and_environment_drift",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 60,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_never_executes_and_snapshot_hash_changes",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 70,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_engineering_api_persistence_isolation_and_validation",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 91,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_syntax_errors_remain_findings",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 96,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_deleted_dependency_impacts_surviving_importer",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 103,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_cli_snapshot_reader",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_engineering.py"
+    },
+    {
+      "line": 5,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "setup_feature",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_lifecycle.py"
+    },
+    {
+      "line": 20,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_requirement_revision_propagates_through_modules",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_lifecycle.py"
+    },
+    {
+      "line": 46,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_missing_snapshot_and_cross_project_impact",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_lifecycle.py"
+    },
+    {
+      "line": 58,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_unmapped_links_and_high_findings_block_review",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_lifecycle.py"
+    },
+    {
+      "line": 8,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "client_for",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 13,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "create_project",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 19,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "post_feature",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 25,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "approve",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 31,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "add_link",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 37,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "evidence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 46,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "review",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 53,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "status",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 60,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_full_workflow_and_revision_invalidates_evidence",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 95,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_failures_superseding_reports_and_rejections",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 117,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_cross_project_references_are_rejected",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 136,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_blank_text_is_rejected_and_report_without_features",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    },
+    {
+      "line": 146,
+      "severity": "low",
+      "title": "Missing function documentation",
+      "details": "test_workflow_page_is_served",
+      "recommendation": "Document inputs, outputs, and failure cases.",
+      "path": "tests/test_workflow.py"
+    }
+  ],
+  "test_plan": [
+    {
+      "path": "analyze_repo.py",
+      "symbol": "read_snapshot",
+      "line": 11,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "analyze_repo.py",
+      "symbol": "main",
+      "line": 31,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/analysis.py",
+      "symbol": "analyze_requirements",
+      "line": 23,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/analysis.py",
+      "symbol": "_make_finding",
+      "line": 70,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/analysis.py",
+      "symbol": "analyze_python_code",
+      "line": 74,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/analysis.py",
+      "symbol": "build_plan",
+      "line": 139,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "validate_target",
+      "line": 56,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "save",
+      "line": 76,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "specification",
+      "line": 86,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "verification",
+      "line": 128,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "security",
+      "line": 139,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "reports",
+      "line": 151,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "finite_values",
+      "line": 27,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "valid_target",
+      "line": 49,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/assurance.py",
+      "symbol": "valid_target",
+      "line": 71,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/dataflow.py",
+      "symbol": "scan_dataflow",
+      "line": 12,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/dataflow.py",
+      "symbol": "expression",
+      "line": 56,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/dataflow.py",
+      "symbol": "block",
+      "line": 111,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "check_project",
+      "line": 63,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "requirements",
+      "line": 69,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "repository",
+      "line": 75,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "reports",
+      "line": 96,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "debug",
+      "line": 104,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "contracts",
+      "line": 110,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "environment",
+      "line": 116,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "decision",
+      "line": 122,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "decisions",
+      "line": 133,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "lifecycle",
+      "line": 142,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/engineering.py",
+      "symbol": "bounded_files",
+      "line": 23,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "qualified",
+      "line": 13,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "inspect_source",
+      "line": 21,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "requirements_intelligence",
+      "line": 81,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "repository_intelligence",
+      "line": 98,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "debug_traceback",
+      "line": 162,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "compare_contracts",
+      "line": 183,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "environment_check",
+      "line": 198,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/intelligence.py",
+      "symbol": "finding",
+      "line": 38,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/lifecycle.py",
+      "symbol": "latest_repository",
+      "line": 14,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/lifecycle.py",
+      "symbol": "criterion_impact",
+      "line": 19,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/lifecycle.py",
+      "symbol": "lifecycle_report",
+      "line": 61,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "lifespan",
+      "line": 17,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "latest",
+      "line": 54,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "index",
+      "line": 63,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "overview",
+      "line": 68,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "list_modules",
+      "line": 73,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "list_projects",
+      "line": 78,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "create_project",
+      "line": 84,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "project_detail",
+      "line": 94,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "check_requirements",
+      "line": 100,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "check_code",
+      "line": 110,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "get_report",
+      "line": 121,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/main.py",
+      "symbol": "engineering_page",
+      "line": 159,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "symbol": "bounded",
+      "line": 20,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "symbol": "verify_numeric",
+      "line": 86,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "symbol": "__init__",
+      "line": 27,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "symbol": "tick",
+      "line": 30,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "symbol": "expression",
+      "line": 35,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/numeric_verifier.py",
+      "symbol": "block",
+      "line": 67,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/storage.py",
+      "symbol": "db",
+      "line": 18,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/storage.py",
+      "symbol": "now_iso",
+      "line": 33,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/storage.py",
+      "symbol": "get_project",
+      "line": 37,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/storage.py",
+      "symbol": "initialize",
+      "line": 44,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "must_exist",
+      "line": 57,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "record_event",
+      "line": 76,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "clean",
+      "line": 83,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "generate_drafts",
+      "line": 90,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "_feature_snapshot",
+      "line": 107,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "_criterion_snapshot",
+      "line": 114,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "_report",
+      "line": 153,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "create_feature",
+      "line": 175,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "list_features",
+      "line": 191,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "get_feature",
+      "line": 199,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "edit_criterion",
+      "line": 206,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "approve_criterion",
+      "line": 223,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "create_code_link",
+      "line": 235,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "create_evidence",
+      "line": 246,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "review_evidence",
+      "line": 269,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "traceability_report",
+      "line": 283,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "workflow_events",
+      "line": 289,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    },
+    {
+      "path": "app/workflow.py",
+      "symbol": "requirement_impact",
+      "line": 300,
+      "cases": [
+        "typical valid input",
+        "empty/missing input",
+        "boundary values",
+        "dependency failure"
+      ],
+      "status": "suggested, not executed"
+    }
+  ],
+  "documentation_markdown": "# Repository reference\n\nSource snapshot: 69cc1e75d3db8977dea81b7ab11f5a1c8a2f2b7e4fd99287b196d1a92d947725\n\nGenerated from static Python syntax; refresh after source changes.\n\n- `analyze_repo.py:11` \u2014 `read_snapshot(root)`; branch complexity estimate 8\n- `analyze_repo.py:31` \u2014 `main()`; branch complexity estimate 2\n- `app/analysis.py:23` \u2014 `analyze_requirements(text)`; branch complexity estimate 11\n- `app/analysis.py:70` \u2014 `_make_finding(line, severity, title, details, recommendation)`; branch complexity estimate 1\n- `app/analysis.py:74` \u2014 `analyze_python_code(code)`; branch complexity estimate 27\n- `app/analysis.py:139` \u2014 `build_plan(requirement_analysis)`; branch complexity estimate 1\n- `app/assurance.py:56` \u2014 `validate_target(path, function)`; branch complexity estimate 3\n- `app/assurance.py:76` \u2014 `save(conn, project_id, kind, criterion, result)`; branch complexity estimate 3\n- `app/assurance.py:86` \u2014 `specification(project_id, payload)`; branch complexity estimate 12\n- `app/assurance.py:128` \u2014 `verification(project_id, payload)`; branch complexity estimate 1\n- `app/assurance.py:139` \u2014 `security(project_id, payload)`; branch complexity estimate 2\n- `app/assurance.py:151` \u2014 `reports(project_id)`; branch complexity estimate 1\n- `app/assurance.py:27` \u2014 `finite_values(self)`; branch complexity estimate 5\n- `app/assurance.py:49` \u2014 `valid_target(self)`; branch complexity estimate 2\n- `app/assurance.py:71` \u2014 `valid_target(self)`; branch complexity estimate 1\n- `app/dataflow.py:12` \u2014 `scan_dataflow(files)`; branch complexity estimate 48\n- `app/dataflow.py:56` \u2014 `expression(node, state)`; branch complexity estimate 18\n- `app/dataflow.py:111` \u2014 `block(statements, state)`; branch complexity estimate 9\n- `app/engineering.py:63` \u2014 `check_project(project_id)`; branch complexity estimate 1\n- `app/engineering.py:69` \u2014 `requirements(project_id, payload)`; branch complexity estimate 1\n- `app/engineering.py:75` \u2014 `repository(project_id, payload)`; branch complexity estimate 2\n- `app/engineering.py:96` \u2014 `reports(project_id)`; branch complexity estimate 1\n- `app/engineering.py:104` \u2014 `debug(project_id, payload)`; branch complexity estimate 1\n- `app/engineering.py:110` \u2014 `contracts(project_id, payload)`; branch complexity estimate 1\n- `app/engineering.py:116` \u2014 `environment(project_id, payload)`; branch complexity estimate 1\n- `app/engineering.py:122` \u2014 `decision(project_id, payload)`; branch complexity estimate 2\n- `app/engineering.py:133` \u2014 `decisions(project_id)`; branch complexity estimate 1\n- `app/engineering.py:142` \u2014 `lifecycle(project_id)`; branch complexity estimate 1\n- `app/engineering.py:23` \u2014 `bounded_files(self)`; branch complexity estimate 7\n- `app/intelligence.py:13` \u2014 `qualified(node, aliases)`; branch complexity estimate 3\n- `app/intelligence.py:21` \u2014 `inspect_source(path, source)`; branch complexity estimate 26\n- `app/intelligence.py:81` \u2014 `requirements_intelligence(text)`; branch complexity estimate 5\n- `app/intelligence.py:98` \u2014 `repository_intelligence(files, baseline, changed, hours_per_point, hourly_rate)`; branch complexity estimate 18\n- `app/intelligence.py:162` \u2014 `debug_traceback(traceback, files)`; branch complexity estimate 4\n- `app/intelligence.py:183` \u2014 `compare_contracts(provider, consumer)`; branch complexity estimate 6\n- `app/intelligence.py:198` \u2014 `environment_check(expected, actual)`; branch complexity estimate 2\n- `app/intelligence.py:38` \u2014 `finding(node, rule, severity, message, remedy)`; branch complexity estimate 1\n- `app/lifecycle.py:14` \u2014 `latest_repository(conn, project_id)`; branch complexity estimate 2\n- `app/lifecycle.py:19` \u2014 `criterion_impact(conn, project_id, criterion)`; branch complexity estimate 12\n- `app/lifecycle.py:61` \u2014 `lifecycle_report(conn, project_id)`; branch complexity estimate 18\n- `app/main.py:17` \u2014 `lifespan(app)`; branch complexity estimate 1\n- `app/main.py:54` \u2014 `latest(conn, project_id, kind)`; branch complexity estimate 2\n- `app/main.py:63` \u2014 `index()`; branch complexity estimate 1\n- `app/main.py:68` \u2014 `overview()`; branch complexity estimate 1\n- `app/main.py:73` \u2014 `list_modules()`; branch complexity estimate 1\n- `app/main.py:78` \u2014 `list_projects()`; branch complexity estimate 1\n- `app/main.py:84` \u2014 `create_project(item)`; branch complexity estimate 2\n- `app/main.py:94` \u2014 `project_detail(project_id)`; branch complexity estimate 1\n- `app/main.py:100` \u2014 `check_requirements(project_id, payload)`; branch complexity estimate 1\n- `app/main.py:110` \u2014 `check_code(project_id, payload)`; branch complexity estimate 2\n- `app/main.py:121` \u2014 `get_report(project_id)`; branch complexity estimate 5\n- `app/main.py:159` \u2014 `engineering_page()`; branch complexity estimate 1\n- `app/numeric_verifier.py:20` \u2014 `bounded(value)`; branch complexity estimate 2\n- `app/numeric_verifier.py:86` \u2014 `verify_numeric(source, function, cases)`; branch complexity estimate 23\n- `app/numeric_verifier.py:27` \u2014 `__init__(self)`; branch complexity estimate 1\n- `app/numeric_verifier.py:30` \u2014 `tick(self)`; branch complexity estimate 2\n- `app/numeric_verifier.py:35` \u2014 `expression(self, node, env)`; branch complexity estimate 16\n- `app/numeric_verifier.py:67` \u2014 `block(self, statements, env)`; branch complexity estimate 10\n- `app/storage.py:18` \u2014 `db()`; branch complexity estimate 2\n- `app/storage.py:33` \u2014 `now_iso()`; branch complexity estimate 1\n- `app/storage.py:37` \u2014 `get_project(conn, project_id)`; branch complexity estimate 2\n- `app/storage.py:44` \u2014 `initialize()`; branch complexity estimate 1\n- `app/workflow.py:57` \u2014 `must_exist(conn, table, column, row_id, project_id)`; branch complexity estimate 2\n- `app/workflow.py:76` \u2014 `record_event(conn, project_id, action, object_type, object_id, details)`; branch complexity estimate 1\n- `app/workflow.py:83` \u2014 `clean(value, label, minimum)`; branch complexity estimate 2\n- `app/workflow.py:90` \u2014 `generate_drafts(customer_text)`; branch complexity estimate 3\n- `app/workflow.py:107` \u2014 `_feature_snapshot(conn, feature_id)`; branch complexity estimate 1\n- `app/workflow.py:114` \u2014 `_criterion_snapshot(conn, criterion)`; branch complexity estimate 13\n- `app/workflow.py:153` \u2014 `_report(conn, project_id)`; branch complexity estimate 1\n- `app/workflow.py:175` \u2014 `create_feature(project_id, payload)`; branch complexity estimate 2\n- `app/workflow.py:191` \u2014 `list_features(project_id)`; branch complexity estimate 1\n- `app/workflow.py:199` \u2014 `get_feature(project_id, feature_id)`; branch complexity estimate 1\n- `app/workflow.py:206` \u2014 `edit_criterion(project_id, criterion_id, payload)`; branch complexity estimate 2\n- `app/workflow.py:223` \u2014 `approve_criterion(project_id, criterion_id, payload)`; branch complexity estimate 2\n- `app/workflow.py:235` \u2014 `create_code_link(project_id, criterion_id, payload)`; branch complexity estimate 1\n- `app/workflow.py:246` \u2014 `create_evidence(project_id, criterion_id, payload)`; branch complexity estimate 4\n- `app/workflow.py:269` \u2014 `review_evidence(project_id, evidence_id, payload)`; branch complexity estimate 2\n- `app/workflow.py:283` \u2014 `traceability_report(project_id)`; branch complexity estimate 1\n- `app/workflow.py:289` \u2014 `workflow_events(project_id)`; branch complexity estimate 2\n- `app/workflow.py:300` \u2014 `requirement_impact(project_id, criterion_id)`; branch complexity estimate 1\n- `tests/test_app.py:14` \u2014 `test_requirement_checks()`; branch complexity estimate 1\n- `tests/test_app.py:20` \u2014 `test_scanner_flags_unsafe_patterns()`; branch complexity estimate 1\n- `tests/test_app.py:27` \u2014 `test_scanner_never_executes_code()`; branch complexity estimate 1\n- `tests/test_app.py:34` \u2014 `test_end_to_end()`; branch complexity estimate 1\n- `tests/test_assurance.py:13` \u2014 `example(value, expected)`; branch complexity estimate 1\n- `tests/test_assurance.py:17` \u2014 `test_numeric_verifier_detects_real_counterexample()`; branch complexity estimate 1\n- `tests/test_assurance.py:25` \u2014 `test_supported_interpreter_matches_known_python_semantics(value)`; branch complexity estimate 1\n- `tests/test_assurance.py:31` \u2014 `test_short_circuit_prevents_unreached_division_error()`; branch complexity estimate 1\n- `tests/test_assurance.py:36` \u2014 `test_boolean_distinct_from_numeric_and_zero_division()`; branch complexity estimate 1\n- `tests/test_assurance.py:43` \u2014 `test_verifier_rejects_host_operations_without_running_them(tmp_path)`; branch complexity estimate 1\n- `tests/test_assurance.py:55` \u2014 `test_unsupported_syntax_never_claims_a_pass(source)`; branch complexity estimate 1\n- `tests/test_assurance.py:59` \u2014 `test_empty_case_set_and_huge_constant_are_rejected()`; branch complexity estimate 1\n- `tests/test_assurance.py:64` \u2014 `test_definition_time_side_effects_are_rejected(tmp_path)`; branch complexity estimate 1\n- `tests/test_assurance.py:71` \u2014 `test_dataflow_tracks_alias_assignments_and_helper_calls()`; branch complexity estimate 1\n- `tests/test_assurance.py:80` \u2014 `test_parameterized_sql_and_safe_reassignment_do_not_flag()`; branch complexity estimate 1\n- `tests/test_assurance.py:85` \u2014 `test_interpolated_query_and_branch_merge_are_flagged()`; branch complexity estimate 1\n- `tests/test_assurance.py:90` \u2014 `make_project(client)`; branch complexity estimate 1\n- `tests/test_assurance.py:99` \u2014 `test_structured_spec_clarification_and_real_test_generation(tmp_path)`; branch complexity estimate 1\n- `tests/test_assurance.py:126` \u2014 `test_verification_is_bound_to_revision_and_source_without_upgrading_evidence()`; branch complexity estimate 1\n- `tests/test_engineering.py:10` \u2014 `test_alias_security_and_behavior_checks()`; branch complexity estimate 1\n- `tests/test_engineering.py:24` \u2014 `test_safe_calls_are_not_flagged()`; branch complexity estimate 1\n- `tests/test_engineering.py:33` \u2014 `test_transitive_change_impact_relative_imports_and_deletions()`; branch complexity estimate 1\n- `tests/test_engineering.py:45` \u2014 `test_contradiction_and_traceback()`; branch complexity estimate 1\n- `tests/test_engineering.py:53` \u2014 `test_contract_and_environment_drift()`; branch complexity estimate 1\n- `tests/test_engineering.py:60` \u2014 `test_never_executes_and_snapshot_hash_changes(tmp_path)`; branch complexity estimate 1\n- `tests/test_engineering.py:70` \u2014 `test_engineering_api_persistence_isolation_and_validation()`; branch complexity estimate 2\n- `tests/test_engineering.py:91` \u2014 `test_syntax_errors_remain_findings()`; branch complexity estimate 1\n- `tests/test_engineering.py:96` \u2014 `test_deleted_dependency_impacts_surviving_importer()`; branch complexity estimate 1\n- `tests/test_engineering.py:103` \u2014 `test_cli_snapshot_reader(tmp_path)`; branch complexity estimate 1\n- `tests/test_lifecycle.py:5` \u2014 `setup_feature(client)`; branch complexity estimate 1\n- `tests/test_lifecycle.py:20` \u2014 `test_requirement_revision_propagates_through_modules()`; branch complexity estimate 1\n- `tests/test_lifecycle.py:46` \u2014 `test_missing_snapshot_and_cross_project_impact()`; branch complexity estimate 1\n- `tests/test_lifecycle.py:58` \u2014 `test_unmapped_links_and_high_findings_block_review()`; branch complexity estimate 1\n- `tests/test_workflow.py:8` \u2014 `client_for(monkeypatch, tmp_path)`; branch complexity estimate 1\n- `tests/test_workflow.py:13` \u2014 `create_project(client, name)`; branch complexity estimate 1\n- `tests/test_workflow.py:19` \u2014 `post_feature(client, project_id, text)`; branch complexity estimate 1\n- `tests/test_workflow.py:25` \u2014 `approve(client, project_id, criterion_id)`; branch complexity estimate 1\n- `tests/test_workflow.py:31` \u2014 `add_link(client, pid, cid, reference)`; branch complexity estimate 1\n- `tests/test_workflow.py:37` \u2014 `evidence(client, pid, cid, link, outcome, method)`; branch complexity estimate 2\n- `tests/test_workflow.py:46` \u2014 `review(client, pid, evidence_id, decision)`; branch complexity estimate 1\n- `tests/test_workflow.py:53` \u2014 `status(client, pid)`; branch complexity estimate 1\n- `tests/test_workflow.py:60` \u2014 `test_full_workflow_and_revision_invalidates_evidence(monkeypatch, tmp_path)`; branch complexity estimate 1\n- `tests/test_workflow.py:95` \u2014 `test_failures_superseding_reports_and_rejections(monkeypatch, tmp_path)`; branch complexity estimate 1\n- `tests/test_workflow.py:117` \u2014 `test_cross_project_references_are_rejected(monkeypatch, tmp_path)`; branch complexity estimate 1\n- `tests/test_workflow.py:136` \u2014 `test_blank_text_is_rejected_and_report_without_features(monkeypatch, tmp_path)`; branch complexity estimate 1\n- `tests/test_workflow.py:146` \u2014 `test_workflow_page_is_served(monkeypatch, tmp_path)`; branch complexity estimate 1",
+  "estimate": {
+    "complexity_points": 400,
+    "hours_range": [
+      600.0,
+      1600.0
+    ],
+    "cost_range": [
+      30000.0,
+      80000.0
+    ],
+    "hours_per_point": 2.0,
+    "hourly_rate": 50.0,
+    "basis": "User-supplied calibration applied to static branch counts in impacted files. Scenario range, not a validated forecast."
+  },
+  "release_checks": {
+    "high_severity_findings": 0,
+    "test_files_present": true,
+    "tests_executed": false,
+    "status": "needs_test_and_deployment_evidence"
+  },
+  "limitations": [
+    "Python static imports only; dynamic imports and runtime dispatch are unresolved.",
+    "No submitted code or tests executed. No complete security or correctness guarantee.",
+    "All test files should be run; dependency graph may miss indirect dependencies."
+  ]
+}
