@@ -1,4 +1,13 @@
-# DevFlow 12 — Requirements → Evidence (working local repository)
+# DevFlow 12 — Intelligent Software Development & Verification Platform
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/bhuvanjakkula/Devflow12)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bhuvanjakkula/Devflow12)
+
+### Direct Cloud Deployment Links:
+- **Deploy to Render (1-Click Blueprint)**: [https://render.com/deploy?repo=https://github.com/bhuvanjakkula/Devflow12](https://render.com/deploy?repo=https://github.com/bhuvanjakkula/Devflow12)
+- **Deploy to Vercel (1-Click)**: [https://vercel.com/new/clone?repository-url=https://github.com/bhuvanjakkula/Devflow12](https://vercel.com/new/clone?repository-url=https://github.com/bhuvanjakkula/Devflow12)
+
+---
 
 **Version 0.19 OpenAI assistance:** `/ai` provides requirements analysis, debugging suggestions and explanations through the OpenAI Responses API. It sends only explicitly submitted text/context, uses server-side credentials, enforces tenant opt-in and a daily request quota, and never changes approvals or verified evidence. See [setup and privacy details](docs/OPENAI_ASSISTANCE.md). Disabled until the operator supplies an API key, a compatible model and explicit enablement. No live OpenAI call has been verified in this workspace.
 
